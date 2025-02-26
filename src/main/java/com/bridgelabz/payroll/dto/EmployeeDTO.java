@@ -2,7 +2,7 @@ package com.bridgelabz.payroll.dto;
 
 import lombok.Getter;
 import lombok.Setter;
-// dto
+
 public class EmployeeDTO {
 
     @Getter @Setter
