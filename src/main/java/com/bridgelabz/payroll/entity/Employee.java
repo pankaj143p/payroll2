@@ -3,6 +3,7 @@ package com.bridgelabz.payroll.entity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -21,6 +22,7 @@ public class Employee {
     private @Getter @Setter int id;
 
     @NotNull(message = "Name can not be null") // Validates that the name field cannot be null
+    @Pattern(regexp = "^[A-Za-z ]+$", message = "Name must contain only letters and spaces") // Ensures name follows a specific pattern (only letters and spaces)
     private @Getter @Setter String name;
 
     @Min(value = 1, message = "Salary should be a positive number") // Ensures the salary is greater than or equal to 1
