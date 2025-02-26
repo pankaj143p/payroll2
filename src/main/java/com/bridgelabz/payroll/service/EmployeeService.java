@@ -1,10 +1,12 @@
 package com.bridgelabz.payroll.service;
 
+import com.bridgelabz.payroll.dto.EmployeeDTO;
 import com.bridgelabz.payroll.entity.Employee;
 import com.bridgelabz.payroll.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -23,10 +25,16 @@ public class EmployeeService {
     }
 
     // save employee
-    public Employee saveEmployee(Employee emp){
+//    public Employee saveEmployee(Employee emp){
+//        return empRes.save(emp);
+//    }
+     public Employee saveEmployee(EmployeeDTO empDto){
+        Employee emp  = new Employee();
+        emp.setName(empDto.getName());
+        emp.setSalary(empDto.getSalary());
+        emp.setGender(empDto.getGender());
         return empRes.save(emp);
-    }
-
+     }
     // for delete employee
     public boolean deleteEmployee(int id){
         if(empRes.existsById(id)) {
@@ -37,10 +45,22 @@ public class EmployeeService {
     }
 
     // update employee details
-    public Employee updateEmployee(int id, Employee emp){
-        if(empRes.existsById(id)){
-            emp.setId(id);
-            return empRes.save(emp);
+//    public Employee updateEmployee(int id, Employee emp){
+//        if(empRes.existsById(id)){
+//            emp.setId(id);
+//            return empRes.save(emp);
+//        }
+//        return null;
+//    }
+
+    public Employee updateEmployee(int id, EmployeeDTO empDto){
+        Optional<Employee> optEmp = empRes.findById(id);
+        if(optEmp.isPresent()){
+            Employee emp = optEmp.get();
+            emp.setName(empDto.getName());
+            emp.setSalary(empDto.getSalary());
+            empRes.save(emp);
+            return emp;
         }
         return null;
     }
