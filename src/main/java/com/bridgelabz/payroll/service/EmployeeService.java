@@ -3,6 +3,7 @@ package com.bridgelabz.payroll.service;
 import com.bridgelabz.payroll.dto.EmployeeDTO;
 import com.bridgelabz.payroll.entity.Employee;
 import com.bridgelabz.payroll.repository.EmployeeRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -71,56 +72,75 @@ import java.util.Optional;
 
 //  <-------------  Using ArrayList  ------------------>
 
+
+@Slf4j
 @Service
 public class EmployeeService {
 
-    // In-memory list to store employee data
     private List<Employee> employeeList = new ArrayList<>();
 
     // Save a new employee (store it in memory)
     public Employee saveEmployee(EmployeeDTO employeeDTO) {
+        log.info("Attempting to save new employee with name: {}", employeeDTO.getName()); // Log before saving
         Employee employee = new Employee();
         employee.setName(employeeDTO.getName());
         employee.setSalary(employeeDTO.getSalary());
         employee.setStartDate(LocalDate.now());  // Default start date to current date
         employee.setGender("Not Specified");  // Default gender
-        // Add employee to in-memory list
         employeeList.add(employee);
+        log.info("Employee saved successfully: {}", employee); // Log after saving
         return employee;
     }
 
-    // Get all employees from the in-memory list
+    // Get all employees
     public List<Employee> getAllEmployees() {
-        return employeeList;  // Return the list of employees
+        log.info("Fetching all employees from the memory store."); // Log before fetching data
+        return employeeList;
     }
 
-    // Get employee by ID (searching through in-memory list)
+    // Get employee by ID
     public Employee getEmployeeById(int id) {
+        log.info("Fetching employee with ID: {}", id);  // Log before fetching employee by ID
         Optional<Employee> employee = employeeList.stream()
                 .filter(emp -> emp.getId() == id)
                 .findFirst();
-        return employee.orElse(null);  // Return the employee if found, otherwise return null
+        if (employee.isPresent()) {
+            log.info("Employee found: {}", employee.get()); // Log when the employee is found
+            return employee.get();
+        } else {
+            log.warn("Employee with ID: {} not found.", id); // Log a warning if employee is not found
+            return null;
+        }
     }
 
-    // Update an employee's details (modify in-memory list)
+    // Update employee
     public Employee updateEmployee(int id, EmployeeDTO employeeDTO) {
+        log.info("Updating employee with ID: {}", id);  // Log before updating employee
         Employee employee = getEmployeeById(id);
         if (employee != null) {
             employee.setName(employeeDTO.getName());
             employee.setSalary(employeeDTO.getSalary());
+            log.info("Employee updated successfully: {}", employee); // Log after updating employee
             return employee;
+        } else {
+            log.warn("Employee with ID: {} not found for update.", id); // Log a warning if update fails
+            return null;
         }
-        return null;  // If employee not found, return null
     }
 
-    // Delete an employee (remove from in-memory list)
+    // Delete employee
     public boolean deleteEmployee(int id) {
+        log.info("Attempting to delete employee with ID: {}", id);  // Log before deleting
         Employee employee = getEmployeeById(id);
         if (employee != null) {
-            employeeList.remove(employee);  // Remove the employee from the list
+            employeeList.remove(employee);
+            log.info("Employee with ID: {} deleted successfully.", id);  // Log after deleting employee
             return true;
+        } else {
+            log.warn("Employee with ID: {} not found for deletion.", id);  // Log a warning if employee not found
+            return false;
         }
-        return false;  // Return false if employee wasn't found
     }
 }
+
 
