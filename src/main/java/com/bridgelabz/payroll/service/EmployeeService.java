@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
+// service class to implement service layer
 public class EmployeeService {
    @Autowired
     EmployeeRepository empRes;
