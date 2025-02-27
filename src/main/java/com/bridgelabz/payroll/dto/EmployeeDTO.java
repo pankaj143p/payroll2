@@ -1,25 +1,24 @@
 package com.bridgelabz.payroll.dto;
 
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDate;
+
+@Getter @Setter
 public class EmployeeDTO {
 
-    @Getter @Setter
+    @NotNull(message = "Name can not be null")
+    @Pattern(regexp = "^[A-Za-z ]+$", message = "Name must contain only letters and spaces")
     private String name;
 
-    @Getter @Setter
+    @Min(value = 1, message = "Salary should be a positive number")
     private double salary;
 
-    @Getter @Setter
+    private LocalDate startDate;
+
     private String gender;
-
-    // Constructor
-    public EmployeeDTO() {}
-
-    public EmployeeDTO(String name, double salary, String gender) {
-        this.name = name;
-        this.salary = salary;
-        this.gender = gender;
-    }
 }

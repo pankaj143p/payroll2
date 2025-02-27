@@ -69,7 +69,7 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping("/employeepayrollservice")
+@RequestMapping("/employees")
 public class EmployeeController {
 
     @Autowired
@@ -77,7 +77,7 @@ public class EmployeeController {
 
     // Create new Employee
     @PostMapping("/create")
-    public ResponseEntity<Employee> createEmployee(@RequestBody EmployeeDTO employeeDTO) {
+    public ResponseEntity<Employee> createEmployee(@Valid @RequestBody EmployeeDTO employeeDTO) {
         Employee employee = employeeService.saveEmployee(employeeDTO);
         return ResponseEntity.status(201).body(employee);
     }
@@ -106,7 +106,7 @@ public class EmployeeController {
 
     // Update Employee
     @PutMapping("/update/{id}")
-    public ResponseEntity<Employee> updateEmployee(@PathVariable int id, @RequestBody EmployeeDTO employeeDTO) {
+    public ResponseEntity<Employee> updateEmployee(@PathVariable int id, @Valid @RequestBody EmployeeDTO employeeDTO) {
         Employee employee = employeeService.updateEmployee(id, employeeDTO);
         if (employee != null) {
             return ResponseEntity.ok(employee);

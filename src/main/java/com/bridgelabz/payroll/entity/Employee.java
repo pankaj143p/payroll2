@@ -9,7 +9,6 @@ import lombok.*;
 import java.time.LocalDate;
 // <---  Lambok for auth generate all things such that constructors, getters and setters --->
 
-
 @Entity // Marks this class as a JPA entity
 @Table(name = "employee") // Defines the table name in the database
 @NoArgsConstructor // Generates a no-arguments constructor
