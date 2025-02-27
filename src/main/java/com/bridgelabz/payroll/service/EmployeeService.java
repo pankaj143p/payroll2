@@ -2,6 +2,7 @@ package com.bridgelabz.payroll.service;
 
 import com.bridgelabz.payroll.dto.EmployeeDTO;
 import com.bridgelabz.payroll.entity.Employee;
+import com.bridgelabz.payroll.exception.EmployeeNotFoundException;
 import com.bridgelabz.payroll.repository.EmployeeRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +25,7 @@ public class EmployeeService {
 
     // find employee by id
     public Employee getEmployeeById(int id){
-        return empRes.findById(id).orElse(null);
+        return empRes.findById(id).orElseThrow(()-> new EmployeeNotFoundException("this "+id+" employee not found"));
     }
 
     // save employee

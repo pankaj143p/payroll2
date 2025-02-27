@@ -22,5 +22,10 @@ public class CustomExceptionHandler {
         ErrorResponse errRes = new ErrorResponse(errMsg.toString(), HttpStatus.BAD_REQUEST.value());
         return new ResponseEntity<>(errRes, HttpStatus.BAD_REQUEST);
     }
-
+    // employee not found exception
+    @ExceptionHandler(EmployeeNotFoundException.class)
+    public  ResponseEntity<String> handleEmployeeNotFoundException(EmployeeNotFoundException e){
+        System.out.println("Exception Occured : "+e.getMessage());
+        return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
+    }
 }
