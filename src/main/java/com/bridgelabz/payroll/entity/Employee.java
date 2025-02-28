@@ -43,6 +43,7 @@ public class Employee {
     @Column(name = "department")
     private @Getter @Setter List<String> departments;
 
+    // contructor for dto class
     public Employee(EmployeeDTO empDto) {
 
             this.name = empDto.getName();
