@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 @Slf4j  // This annotation will automatically create a logger instance for this class.
@@ -92,6 +93,12 @@ public class EmployeeService {
             log.error("Employee with ID: {} not found for update", id);
             return null;
         }
+    }
+    public List<EmployeeDTO> getSalesEmployees() {
+        List<Employee> salesEmployees = empRes.findEmployeesBySalesDepartment();
+        return salesEmployees.stream()
+                .map(employee -> modelMapper.map(employee, EmployeeDTO.class))
+                .collect(Collectors.toList());
     }
 }
 

@@ -38,10 +38,9 @@ public class Employee {
 
     private @Getter @Setter String profilePicture;
 
-    @ElementCollection
-    @CollectionTable(name = "employee_departments", joinColumns = @JoinColumn(name = "employee_id"))
+    @Getter @Setter
     @Column(name = "department")
-    private @Getter @Setter List<String> departments;
+    private String departments;
 
     // contructor for dto class
     public Employee(EmployeeDTO empDto) {

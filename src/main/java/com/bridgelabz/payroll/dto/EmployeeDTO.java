@@ -22,9 +22,9 @@ public class EmployeeDTO {
     @Min(value = 500, message = "Salary should be more than 500")
     private double salary;
 
-    @JsonFormat(pattern = "dd MM yyyy")
+//    @JsonFormat(pattern = "dd MM yyyy")
     @NotNull(message = "start date needed")
-    @PastOrPresent(message = "Start date should be past or present")
+//    @PastOrPresent(message = "Start date should be past or present")
     private LocalDate startDate;
 
     @Pattern(regexp = "male|female", message = "Gender needs male or female")
@@ -37,7 +37,7 @@ public class EmployeeDTO {
     private String profilePicture;
 
     @NotNull(message = "department should be needed")
-    private  List<String>department;
+    private  String department;
 
 
 }
