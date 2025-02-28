@@ -27,7 +27,8 @@ public class Employee {
     @Pattern(regexp = "^[A-Za-z ]+$", message = "Name must contain only letters and spaces") // Ensures name follows a specific pattern (only letters and spaces)
     private @Getter @Setter String name;
 
-    @Min(value = 1, message = "Salary should be a positive number") // Ensures the salary is greater than or equal to 1
+    // for valid salary
+    @Min(value = 500, message = "Salary should be more than 500") // Ensures the salary is greater than or equal to 1
     private @Getter @Setter double salary;
 
     private @Getter @Setter LocalDate startDate; // Stores the start date of the employee
