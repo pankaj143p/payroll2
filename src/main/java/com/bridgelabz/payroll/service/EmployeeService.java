@@ -5,68 +5,93 @@ import com.bridgelabz.payroll.entity.Employee;
 import com.bridgelabz.payroll.exception.EmployeeNotFoundException;
 import com.bridgelabz.payroll.repository.EmployeeRepository;
 import lombok.extern.slf4j.Slf4j;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-//
+
 @Service
-// implement service class with dto
+@Slf4j  // This annotation will automatically create a logger instance for this class.
 public class EmployeeService {
-   @Autowired
-    EmployeeRepository empRes;
-   // method for find all employees
-    public List<Employee> getAllEmployees(){
-        return empRes.findAll();
+
+    @Autowired
+    private EmployeeRepository empRes;
+
+    private ModelMapper modelMapper = new ModelMapper();
+
+    // Method to fetch all employees
+    public List<Employee> getAllEmployees() {
+        log.info("Fetching all employees");
+        List<Employee> employees = empRes.findAll();
+        log.info("Number of employees found: {}", employees.size());
+        return employees;
     }
 
-    // find employee by id
-    public Employee getEmployeeById(int id){
-        return empRes.findById(id).orElseThrow(()-> new EmployeeNotFoundException("this "+id+" employee not found"));
+    // Method to fetch employee by ID
+    public Employee getEmployeeById(int id) {
+        log.info("Fetching employee with ID: {}", id);
+        return empRes.findById(id)
+                .orElseThrow(() -> {
+                    log.error("Employee with ID: {} not found", id);
+                    return new EmployeeNotFoundException("This employee with ID " + id + " is not found");
+                });
     }
 
-    // save employee
-//    public Employee saveEmployee(Employee emp){
-//        return empRes.save(emp);
-//    }
-     public Employee saveEmployee(EmployeeDTO empDto){
-        Employee emp  = new Employee();
-        emp.setName(empDto.getName());
-        emp.setSalary(empDto.getSalary());
-        emp.setGender(empDto.getGender());
-        return empRes.save(emp);
-     }
-    // for delete employee
-    public boolean deleteEmployee(int id){
-        if(empRes.existsById(id)) {
+    // Method to save a new employee
+    public Employee saveEmployee(EmployeeDTO employeeDTO) {
+        log.info("Saving new employee: {}", employeeDTO.getName());
+
+        Employee employee = new Employee();
+        employee.setName(employeeDTO.getName());
+        employee.setSalary(employeeDTO.getSalary());
+        employee.setDepartments(employeeDTO.getDepartment());  // Set the departments
+        employee.setGender(employeeDTO.getGender());
+        employee.setNote(employeeDTO.getNote());
+        employee.setProfilePicture(employeeDTO.getProfilePicture());
+        employee.setStartDate(employeeDTO.getStartDate());
+
+        Employee savedEmployee = empRes.save(employee);
+        log.info("Employee saved successfully with ID: {}", savedEmployee.getId());
+        return savedEmployee;
+    }
+
+
+    // Method to delete employee by ID
+    public boolean deleteEmployee(int id) {
+        log.info("Attempting to delete employee with ID: {}", id);
+        if (empRes.existsById(id)) {
             empRes.deleteById(id);
+            log.info("Employee with ID: {} deleted successfully", id);
             return true;
+        } else {
+            log.warn("Employee with ID: {} not found for deletion", id);
+            return false;
         }
-        return false;
     }
 
-    // update employee details
-//    public Employee updateEmployee(int id, Employee emp){
-//        if(empRes.existsById(id)){
-//            emp.setId(id);
-//            return empRes.save(emp);
-//        }
-//        return null;
-//    }
+    // Method to update employee details
+    public Employee updateEmployee(int id, EmployeeDTO employeeDTO) {
+        log.info("Attempting to update employee with ID: {}", id);
+        Optional<Employee> optEmployee = empRes.findById(id);
+        if (optEmployee.isPresent()) {
+            Employee employee = optEmployee.get();
+            employee.setName(employeeDTO.getName());
+            employee.setSalary(employeeDTO.getSalary());
+            employee.setDepartments(employeeDTO.getDepartment());
+            employee.setGender(employeeDTO.getGender());
+            employee.setNote(employeeDTO.getNote());
+            employee.setProfilePicture(employeeDTO.getProfilePicture());
+            employee.setStartDate(employeeDTO.getStartDate());
 
-    public Employee updateEmployee(int id, EmployeeDTO empDto){
-        Optional<Employee> optEmp = empRes.findById(id);
-        if(optEmp.isPresent()){
-            Employee emp = optEmp.get();
-            emp.setName(empDto.getName());
-            emp.setSalary(empDto.getSalary());
-            empRes.save(emp);
-            return emp;
+            empRes.save(employee);
+            log.info("Employee with ID: {} updated successfully", id);
+            return employee;
+        } else {
+            log.error("Employee with ID: {} not found for update", id);
+            return null;
         }
-        return null;
     }
 }
 

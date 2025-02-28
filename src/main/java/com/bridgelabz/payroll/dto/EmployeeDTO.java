@@ -3,11 +3,16 @@ package com.bridgelabz.payroll.dto;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.util.List;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter @Setter
 public class EmployeeDTO {
 
@@ -21,4 +26,12 @@ public class EmployeeDTO {
     private LocalDate startDate;
 
     private String gender;
+
+    private String note;
+
+    private String profilePicture;
+
+    private  List<String>department;
+
+
 }

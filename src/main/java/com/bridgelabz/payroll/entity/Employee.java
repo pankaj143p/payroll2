@@ -1,5 +1,6 @@
 package com.bridgelabz.payroll.entity;
 
+import com.bridgelabz.payroll.dto.EmployeeDTO;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
@@ -7,7 +8,9 @@ import jakarta.validation.constraints.Pattern;
 import lombok.*;
 
 import java.time.LocalDate;
+import java.util.List;
 // <---  Lambok for auth generate all things such that constructors, getters and setters --->
+
 
 @Entity // Marks this class as a JPA entity
 @Table(name = "employee") // Defines the table name in the database
@@ -30,4 +33,24 @@ public class Employee {
     private @Getter @Setter LocalDate startDate; // Stores the start date of the employee
 
     private @Getter @Setter String gender; // Gender of the employee
+
+    private @Getter @Setter String note;
+
+    private @Getter @Setter String profilePicture;
+
+    @ElementCollection
+    @CollectionTable(name = "employee_departments", joinColumns = @JoinColumn(name = "employee_id"))
+    @Column(name = "department")
+    private @Getter @Setter List<String> departments;
+
+    public Employee(EmployeeDTO empDto) {
+
+            this.name = empDto.getName();
+            this.salary = empDto.getSalary();
+            this.startDate = empDto.getStartDate();
+            this.gender = empDto.getGender();
+            this.note = empDto.getNote();
+            this.profilePicture = empDto.getProfilePicture();
+            this.departments = empDto.getDepartment();  // Map the list of departments
+    }
 }

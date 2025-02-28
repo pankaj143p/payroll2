@@ -15,4 +15,7 @@ public class ErrorResponse {
 
     public ErrorResponse(String string, int value) {
     }
+
+    public ErrorResponse(String validationFailed, List<String> errorMessages, int value) {
+    }
 }

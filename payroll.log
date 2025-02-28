@@ -1,36 +1,36 @@
-2025-02-27 11:09:49 - Starting PayrollApplication using Java 21.0.6 with PID 10193 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
-2025-02-27 11:09:49 - No active profile set, falling back to 1 default profile: "default"
-2025-02-27 11:09:50 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-27 11:09:50 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
-2025-02-27 11:09:50 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
-2025-02-27 11:09:51 - Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interface.
-2025-02-27 11:09:51 - Tomcat initialized with port 8080 (http)
-2025-02-27 11:09:51 - Starting service [Tomcat]
-2025-02-27 11:09:51 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-27 11:09:52 - Initializing Spring embedded WebApplicationContext
-2025-02-27 11:09:52 - Root WebApplicationContext: initialization completed in 2440 ms
-2025-02-27 11:09:52 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-27 11:09:52 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-27 11:09:52 - HHH000026: Second-level cache disabled
-2025-02-27 11:09:53 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-27 11:09:53 - HikariPool-1 - Starting...
-2025-02-27 11:09:53 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45d7495e
-2025-02-27 11:09:53 - HikariPool-1 - Start completed.
-2025-02-27 11:09:53 - Database ->
+2025-02-28 14:10:29 - Starting PayrollApplication using Java 21.0.6 with PID 8627 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
+2025-02-28 14:10:30 - No active profile set, falling back to 1 default profile: "default"
+2025-02-28 14:10:33 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-28 14:10:33 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
+2025-02-28 14:10:33 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
+2025-02-28 14:10:33 - Finished Spring Data repository scanning in 154 ms. Found 1 JPA repository interface.
+2025-02-28 14:10:35 - Tomcat initialized with port 8080 (http)
+2025-02-28 14:10:35 - Starting service [Tomcat]
+2025-02-28 14:10:35 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-28 14:10:36 - Initializing Spring embedded WebApplicationContext
+2025-02-28 14:10:36 - Root WebApplicationContext: initialization completed in 5818 ms
+2025-02-28 14:10:36 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-28 14:10:37 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-28 14:10:37 - HHH000026: Second-level cache disabled
+2025-02-28 14:10:38 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-28 14:10:38 - HikariPool-1 - Starting...
+2025-02-28 14:10:40 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ea75b05
+2025-02-28 14:10:40 - HikariPool-1 - Start completed.
+2025-02-28 14:10:40 - Database ->
 	   name : MySQL
 	version : 8.0.41-0ubuntu0.24.04.1
 	  major : 8
 	  minor : 0
-2025-02-27 11:09:53 - Driver ->
+2025-02-28 14:10:40 - Driver ->
 	   name : MySQL Connector/J
 	version : mysql-connector-j-8.0.33 (Revision: 7d6b0800528b6b25c68b52dc10d6c1c8429c100c)
 	  major : 8
 	  minor : 0
-2025-02-27 11:09:53 - JDBC version : 4.2
-2025-02-27 11:09:53 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-27 11:09:53 - JDBC driver metadata reported database stores quoted identifiers in more than one case
-2025-02-27 11:09:53 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
-2025-02-27 11:09:53 - HHH10001005: Database info:
+2025-02-28 14:10:40 - JDBC version : 4.2
+2025-02-28 14:10:41 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-28 14:10:41 - JDBC driver metadata reported database stores quoted identifiers in more than one case
+2025-02-28 14:10:41 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2025-02-28 14:10:41 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.41
@@ -38,60 +38,54 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-02-27 11:09:54 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-27 11:09:55 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 11:09:55 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-27 11:09:55 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-27 11:09:55 - Initializing JpaMetamodelMappingContext…
-2025-02-27 11:09:55 - Finished initializing JpaMetamodelMappingContext
-2025-02-27 11:09:56 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
-2025-02-27 11:09:56 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
-2025-02-27 11:09:56 - Tomcat started on port 8080 (http) with context path '/'
-2025-02-27 11:09:56 - Started PayrollApplication in 8.44 seconds (process running for 9.655)
-2025-02-27 11:12:00 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-27 11:12:00 - Initializing Servlet 'dispatcherServlet'
-2025-02-27 11:12:00 - Completed initialization in 4 ms
-2025-02-27 11:12:49 - Attempting to save new employee with name: Pankaj123
-2025-02-27 11:12:49 - Employee saved successfully: Employee(id=0, name=Pankaj123, salary=1550000.0, startDate=2025-02-27, gender=Not Specified)
-2025-02-27 11:13:09 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
-2025-02-27 11:14:37 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-02-27 11:14:37 - Graceful shutdown complete
-2025-02-27 11:14:37 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 11:14:37 - HikariPool-1 - Shutdown initiated...
-2025-02-27 11:14:37 - HikariPool-1 - Shutdown completed.
-2025-02-27 11:14:44 - Starting PayrollApplication using Java 21.0.6 with PID 10586 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
-2025-02-27 11:14:44 - No active profile set, falling back to 1 default profile: "default"
-2025-02-27 11:14:46 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-27 11:14:46 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
-2025-02-27 11:14:46 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
-2025-02-27 11:14:46 - Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface.
-2025-02-27 11:14:47 - Tomcat initialized with port 8080 (http)
-2025-02-27 11:14:47 - Starting service [Tomcat]
-2025-02-27 11:14:47 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-27 11:14:47 - Initializing Spring embedded WebApplicationContext
-2025-02-27 11:14:47 - Root WebApplicationContext: initialization completed in 2241 ms
-2025-02-27 11:14:47 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-27 11:14:47 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-27 11:14:47 - HHH000026: Second-level cache disabled
-2025-02-27 11:14:48 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-27 11:14:48 - HikariPool-1 - Starting...
-2025-02-27 11:14:48 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@cec590c
-2025-02-27 11:14:48 - HikariPool-1 - Start completed.
-2025-02-27 11:14:48 - Database ->
+2025-02-28 14:10:46 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-28 14:10:46 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-28 14:10:47 - Initializing JpaMetamodelMappingContext…
+2025-02-28 14:10:47 - Finished initializing JpaMetamodelMappingContext
+2025-02-28 14:10:47 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
+2025-02-28 14:10:47 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
+2025-02-28 14:10:48 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-28 14:10:49 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-28 14:10:50 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-28 14:10:50 - Started PayrollApplication in 23.885 seconds (process running for 27.159)
+2025-02-28 14:16:51 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-28 14:16:51 - Graceful shutdown complete
+2025-02-28 14:16:51 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-28 14:16:51 - HikariPool-1 - Shutdown initiated...
+2025-02-28 14:16:51 - HikariPool-1 - Shutdown completed.
+2025-02-28 14:36:00 - Starting PayrollApplication using Java 21.0.6 with PID 11682 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
+2025-02-28 14:36:00 - No active profile set, falling back to 1 default profile: "default"
+2025-02-28 14:36:06 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-28 14:36:07 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
+2025-02-28 14:36:07 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
+2025-02-28 14:36:07 - Finished Spring Data repository scanning in 498 ms. Found 1 JPA repository interface.
+2025-02-28 14:36:14 - Tomcat initialized with port 8080 (http)
+2025-02-28 14:36:14 - Starting service [Tomcat]
+2025-02-28 14:36:14 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-28 14:36:15 - Initializing Spring embedded WebApplicationContext
+2025-02-28 14:36:15 - Root WebApplicationContext: initialization completed in 14559 ms
+2025-02-28 14:36:16 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-28 14:36:16 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-28 14:36:17 - HHH000026: Second-level cache disabled
+2025-02-28 14:36:19 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-28 14:36:19 - HikariPool-1 - Starting...
+2025-02-28 14:36:21 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a9b92c6
+2025-02-28 14:36:21 - HikariPool-1 - Start completed.
+2025-02-28 14:36:21 - Database ->
 	   name : MySQL
 	version : 8.0.41-0ubuntu0.24.04.1
 	  major : 8
 	  minor : 0
-2025-02-27 11:14:48 - Driver ->
+2025-02-28 14:36:21 - Driver ->
 	   name : MySQL Connector/J
 	version : mysql-connector-j-8.0.33 (Revision: 7d6b0800528b6b25c68b52dc10d6c1c8429c100c)
 	  major : 8
 	  minor : 0
-2025-02-27 11:14:48 - JDBC version : 4.2
-2025-02-27 11:14:48 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-27 11:14:48 - JDBC driver metadata reported database stores quoted identifiers in more than one case
-2025-02-27 11:14:48 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
-2025-02-27 11:14:48 - HHH10001005: Database info:
+2025-02-28 14:36:21 - JDBC version : 4.2
+2025-02-28 14:36:21 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-28 14:36:21 - JDBC driver metadata reported database stores quoted identifiers in more than one case
+2025-02-28 14:36:21 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2025-02-28 14:36:21 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.41
@@ -99,95 +93,38 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-02-27 11:14:49 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-27 11:14:49 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 11:14:49 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-27 11:14:50 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-27 11:14:50 - Initializing JpaMetamodelMappingContext…
-2025-02-27 11:14:50 - Finished initializing JpaMetamodelMappingContext
-2025-02-27 11:14:50 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
-2025-02-27 11:14:50 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
-2025-02-27 11:14:50 - Tomcat started on port 8080 (http) with context path '/'
-2025-02-27 11:14:50 - Started PayrollApplication in 6.965 seconds (process running for 8.334)
-2025-02-27 11:15:06 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-27 11:15:06 - Initializing Servlet 'dispatcherServlet'
-2025-02-27 11:15:06 - Completed initialization in 2 ms
-2025-02-27 11:15:06 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
-2025-02-27 11:15:14 - Fetching all employees from the memory store.
-2025-02-27 11:16:19 - Fetching all employees from the memory store.
-2025-02-27 11:17:07 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-02-27 11:17:07 - Graceful shutdown complete
-2025-02-27 11:17:07 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 11:17:07 - HikariPool-1 - Shutdown initiated...
-2025-02-27 11:17:07 - HikariPool-1 - Shutdown completed.
-2025-02-27 11:17:40 - Starting PayrollApplication using Java 21.0.6 with PID 10805 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
-2025-02-27 11:17:40 - No active profile set, falling back to 1 default profile: "default"
-2025-02-27 11:17:42 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-27 11:17:42 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
-2025-02-27 11:17:42 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
-2025-02-27 11:17:42 - Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interface.
-2025-02-27 11:17:42 - Tomcat initialized with port 8080 (http)
-2025-02-27 11:17:43 - Starting service [Tomcat]
-2025-02-27 11:17:43 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-27 11:17:43 - Initializing Spring embedded WebApplicationContext
-2025-02-27 11:17:43 - Root WebApplicationContext: initialization completed in 2275 ms
-2025-02-27 11:17:43 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-27 11:17:43 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-27 11:17:43 - HHH000026: Second-level cache disabled
-2025-02-27 11:17:43 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-27 11:17:43 - HikariPool-1 - Starting...
-2025-02-27 11:17:44 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@cec590c
-2025-02-27 11:17:44 - HikariPool-1 - Start completed.
-2025-02-27 11:17:44 - Database ->
-	   name : MySQL
-	version : 8.0.41-0ubuntu0.24.04.1
-	  major : 8
-	  minor : 0
-2025-02-27 11:17:44 - Driver ->
-	   name : MySQL Connector/J
-	version : mysql-connector-j-8.0.33 (Revision: 7d6b0800528b6b25c68b52dc10d6c1c8429c100c)
-	  major : 8
-	  minor : 0
-2025-02-27 11:17:44 - JDBC version : 4.2
-2025-02-27 11:17:44 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-27 11:17:44 - JDBC driver metadata reported database stores quoted identifiers in more than one case
-2025-02-27 11:17:44 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
-2025-02-27 11:17:44 - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.41
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-02-27 11:17:45 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-27 11:17:45 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 11:17:45 - Initializing JpaMetamodelMappingContext…
-2025-02-27 11:17:45 - Finished initializing JpaMetamodelMappingContext
-2025-02-27 11:17:45 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
-2025-02-27 11:17:45 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
-2025-02-27 11:17:45 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-27 11:17:46 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-27 11:17:46 - Tomcat started on port 8080 (http) with context path '/'
-2025-02-27 11:17:46 - Started PayrollApplication in 6.686 seconds (process running for 7.412)
-2025-02-27 11:17:53 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-27 11:17:53 - Initializing Servlet 'dispatcherServlet'
-2025-02-27 11:17:53 - Completed initialization in 2 ms
-2025-02-27 11:18:13 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2025-02-27 11:18:13 - begin
-2025-02-27 11:18:13 - select e1_0.id,e1_0.gender,e1_0.name,e1_0.salary,e1_0.start_date from employee e1_0
-2025-02-27 11:18:13 - committing
-2025-02-27 11:18:30 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2025-02-27 11:18:30 - begin
-2025-02-27 11:18:30 - Executing identity-insert immediately
-2025-02-27 11:18:30 - rolling back
-2025-02-27 11:18:30 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.ConstraintViolationException: Validation failed for classes [com.bridgelabz.payroll.entity.Employee] during persist time for groups [jakarta.validation.groups.Default, ]
+2025-02-28 14:36:30 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-28 14:36:30 - create table employee (id integer not null auto_increment, departments varbinary(255), gender varchar(255), name varchar(255) not null, note varchar(255), profile_picture varchar(255), salary float(53) not null check (salary>=1), start_date date, primary key (id)) engine=InnoDB
+2025-02-28 14:36:30 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-28 14:36:32 - Initializing JpaMetamodelMappingContext…
+2025-02-28 14:36:32 - Finished initializing JpaMetamodelMappingContext
+2025-02-28 14:36:34 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
+2025-02-28 14:36:34 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
+2025-02-28 14:36:35 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-28 14:36:38 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-28 14:36:40 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-28 14:36:40 - Started PayrollApplication in 45.37 seconds (process running for 48.493)
+2025-02-28 14:37:51 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-28 14:37:51 - Initializing Servlet 'dispatcherServlet'
+2025-02-28 14:37:51 - Completed initialization in 13 ms
+2025-02-28 14:37:51 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-02-28 14:37:51 - begin
+2025-02-28 14:37:51 - select e1_0.id,e1_0.departments,e1_0.gender,e1_0.name,e1_0.note,e1_0.profile_picture,e1_0.salary,e1_0.start_date from employee e1_0
+2025-02-28 14:37:52 - committing
+2025-02-28 14:40:17 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-02-28 14:40:33 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-02-28 14:40:33 - begin
+2025-02-28 14:40:33 - Executing identity-insert immediately
+2025-02-28 14:40:33 - rolling back
+2025-02-28 14:40:33 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.ConstraintViolationException: Validation failed for classes [com.bridgelabz.payroll.entity.Employee] during persist time for groups [jakarta.validation.groups.Default, ]
 List of constraint violations:[
-	ConstraintViolationImpl{interpolatedMessage='Name must contain only letters and spaces', propertyPath=name, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Name must contain only letters and spaces'}
+	ConstraintViolationImpl{interpolatedMessage='Salary should be a positive number', propertyPath=salary, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Salary should be a positive number'}
+	ConstraintViolationImpl{interpolatedMessage='Name can not be null', propertyPath=name, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Name can not be null'}
 ]] with root cause
 jakarta.validation.ConstraintViolationException: Validation failed for classes [com.bridgelabz.payroll.entity.Employee] during persist time for groups [jakarta.validation.groups.Default, ]
 List of constraint violations:[
-	ConstraintViolationImpl{interpolatedMessage='Name must contain only letters and spaces', propertyPath=name, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Name must contain only letters and spaces'}
+	ConstraintViolationImpl{interpolatedMessage='Salary should be a positive number', propertyPath=salary, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Salary should be a positive number'}
+	ConstraintViolationImpl{interpolatedMessage='Name can not be null', propertyPath=name, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Name can not be null'}
 ]
 	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:161)
 	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:84)
@@ -211,11 +148,11 @@ List of constraint violations:[
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364)
-	at jdk.proxy2/jdk.proxy2.$Proxy118.persist(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy119.persist(Unknown Source)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:320)
-	at jdk.proxy2/jdk.proxy2.$Proxy118.persist(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy119.persist(Unknown Source)
 	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:636)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -240,8 +177,8 @@ List of constraint violations:[
 	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
-	at jdk.proxy2/jdk.proxy2.$Proxy121.save(Unknown Source)
-	at com.bridgelabz.payroll.service.EmployeeService.saveEmployee(EmployeeService.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy122.save(Unknown Source)
+	at com.bridgelabz.payroll.service.EmployeeService.saveEmployee(EmployeeService.java:40)
 	at com.bridgelabz.payroll.controller.EmployeeController.createEmployee(EmployeeController.java:81)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -291,44 +228,44 @@ List of constraint violations:[
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-02-27 11:20:11 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-02-27 11:20:11 - Graceful shutdown complete
-2025-02-27 11:20:11 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 11:20:11 - HikariPool-1 - Shutdown initiated...
-2025-02-27 11:20:11 - HikariPool-1 - Shutdown completed.
-2025-02-27 11:20:52 - Starting PayrollApplication using Java 21.0.6 with PID 10959 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
-2025-02-27 11:20:52 - No active profile set, falling back to 1 default profile: "default"
-2025-02-27 11:20:54 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-27 11:20:54 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
-2025-02-27 11:20:54 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
-2025-02-27 11:20:54 - Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interface.
-2025-02-27 11:20:55 - Tomcat initialized with port 8080 (http)
-2025-02-27 11:20:55 - Starting service [Tomcat]
-2025-02-27 11:20:55 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-27 11:20:55 - Initializing Spring embedded WebApplicationContext
-2025-02-27 11:20:55 - Root WebApplicationContext: initialization completed in 2670 ms
-2025-02-27 11:20:56 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-27 11:20:56 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-27 11:20:56 - HHH000026: Second-level cache disabled
-2025-02-27 11:20:56 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-27 11:20:57 - HikariPool-1 - Starting...
-2025-02-27 11:20:57 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3303e89e
-2025-02-27 11:20:57 - HikariPool-1 - Start completed.
-2025-02-27 11:20:57 - Database ->
+2025-02-28 14:42:05 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-28 14:42:05 - Graceful shutdown complete
+2025-02-28 14:42:05 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-28 14:42:05 - HikariPool-1 - Shutdown initiated...
+2025-02-28 14:42:05 - HikariPool-1 - Shutdown completed.
+2025-02-28 14:42:28 - Starting PayrollApplication using Java 21.0.6 with PID 12386 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
+2025-02-28 14:42:28 - No active profile set, falling back to 1 default profile: "default"
+2025-02-28 14:42:34 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-28 14:42:34 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
+2025-02-28 14:42:34 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
+2025-02-28 14:42:34 - Finished Spring Data repository scanning in 333 ms. Found 1 JPA repository interface.
+2025-02-28 14:42:38 - Tomcat initialized with port 8080 (http)
+2025-02-28 14:42:38 - Starting service [Tomcat]
+2025-02-28 14:42:38 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-28 14:42:38 - Initializing Spring embedded WebApplicationContext
+2025-02-28 14:42:38 - Root WebApplicationContext: initialization completed in 9664 ms
+2025-02-28 14:42:39 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-28 14:42:39 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-28 14:42:40 - HHH000026: Second-level cache disabled
+2025-02-28 14:42:41 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-28 14:42:41 - HikariPool-1 - Starting...
+2025-02-28 14:42:42 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d20616a
+2025-02-28 14:42:42 - HikariPool-1 - Start completed.
+2025-02-28 14:42:42 - Database ->
 	   name : MySQL
 	version : 8.0.41-0ubuntu0.24.04.1
 	  major : 8
 	  minor : 0
-2025-02-27 11:20:57 - Driver ->
+2025-02-28 14:42:42 - Driver ->
 	   name : MySQL Connector/J
 	version : mysql-connector-j-8.0.33 (Revision: 7d6b0800528b6b25c68b52dc10d6c1c8429c100c)
 	  major : 8
 	  minor : 0
-2025-02-27 11:20:57 - JDBC version : 4.2
-2025-02-27 11:20:57 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-27 11:20:57 - JDBC driver metadata reported database stores quoted identifiers in more than one case
-2025-02-27 11:20:57 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
-2025-02-27 11:20:57 - HHH10001005: Database info:
+2025-02-28 14:42:42 - JDBC version : 4.2
+2025-02-28 14:42:42 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-28 14:42:42 - JDBC driver metadata reported database stores quoted identifiers in more than one case
+2025-02-28 14:42:42 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2025-02-28 14:42:42 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.41
@@ -336,69 +273,173 @@ List of constraint violations:[
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-02-27 11:20:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-27 11:20:59 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 11:20:59 - Initializing JpaMetamodelMappingContext…
-2025-02-27 11:20:59 - Finished initializing JpaMetamodelMappingContext
-2025-02-27 11:20:59 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
-2025-02-27 11:20:59 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
-2025-02-27 11:20:59 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-27 11:21:00 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-27 11:21:00 - Tomcat started on port 8080 (http) with context path '/'
-2025-02-27 11:21:00 - Started PayrollApplication in 8.928 seconds (process running for 9.681)
-2025-02-27 11:21:03 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-27 11:21:03 - Initializing Servlet 'dispatcherServlet'
-2025-02-27 11:21:03 - Completed initialization in 2 ms
-2025-02-27 11:21:03 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2025-02-27 11:21:03 - begin
-2025-02-27 11:21:03 - Executing identity-insert immediately
-2025-02-27 11:21:03 - rolling back
-2025-02-27 11:21:43 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2025-02-27 11:21:43 - begin
-2025-02-27 11:21:43 - select e1_0.id,e1_0.gender,e1_0.name,e1_0.salary,e1_0.start_date from employee e1_0
-2025-02-27 11:21:43 - committing
-2025-02-27 11:22:08 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2025-02-27 11:22:08 - begin
-2025-02-27 11:22:08 - select count(*) from employee e1_0 where e1_0.id=?
-2025-02-27 11:22:08 - committing
-2025-02-27 11:27:49 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-02-27 11:27:49 - Graceful shutdown complete
-2025-02-27 11:27:49 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 11:27:49 - HikariPool-1 - Shutdown initiated...
-2025-02-27 11:27:49 - HikariPool-1 - Shutdown completed.
-2025-02-27 11:27:54 - Starting PayrollApplication using Java 21.0.6 with PID 11288 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
-2025-02-27 11:27:54 - No active profile set, falling back to 1 default profile: "default"
-2025-02-27 11:27:56 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-27 11:27:56 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
-2025-02-27 11:27:56 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
-2025-02-27 11:27:56 - Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interface.
-2025-02-27 11:27:57 - Tomcat initialized with port 8080 (http)
-2025-02-27 11:27:57 - Starting service [Tomcat]
-2025-02-27 11:27:57 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-27 11:27:57 - Initializing Spring embedded WebApplicationContext
-2025-02-27 11:27:57 - Root WebApplicationContext: initialization completed in 2531 ms
-2025-02-27 11:27:57 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-27 11:27:57 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-27 11:27:57 - HHH000026: Second-level cache disabled
-2025-02-27 11:27:58 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-27 11:27:58 - HikariPool-1 - Starting...
-2025-02-27 11:27:58 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ea66c33
-2025-02-27 11:27:58 - HikariPool-1 - Start completed.
-2025-02-27 11:27:58 - Database ->
+2025-02-28 14:42:46 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-28 14:42:46 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-28 14:42:46 - Initializing JpaMetamodelMappingContext…
+2025-02-28 14:42:46 - Finished initializing JpaMetamodelMappingContext
+2025-02-28 14:42:47 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
+2025-02-28 14:42:47 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
+2025-02-28 14:42:47 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-28 14:42:49 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-28 14:42:49 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-28 14:42:49 - Started PayrollApplication in 25.611 seconds (process running for 28.363)
+2025-02-28 14:43:07 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-28 14:43:07 - Initializing Servlet 'dispatcherServlet'
+2025-02-28 14:43:07 - Completed initialization in 8 ms
+2025-02-28 14:43:09 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-02-28 14:43:09 - begin
+2025-02-28 14:43:09 - Executing identity-insert immediately
+2025-02-28 14:43:09 - rolling back
+2025-02-28 14:43:09 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.ConstraintViolationException: Validation failed for classes [com.bridgelabz.payroll.entity.Employee] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Salary should be a positive number', propertyPath=salary, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Salary should be a positive number'}
+	ConstraintViolationImpl{interpolatedMessage='Name can not be null', propertyPath=name, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Name can not be null'}
+]] with root cause
+jakarta.validation.ConstraintViolationException: Validation failed for classes [com.bridgelabz.payroll.entity.Employee] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Salary should be a positive number', propertyPath=salary, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Salary should be a positive number'}
+	ConstraintViolationImpl{interpolatedMessage='Name can not be null', propertyPath=name, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Name can not be null'}
+]
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:161)
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:84)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.preInsert(EntityIdentityInsertAction.java:201)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:79)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:682)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:293)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:274)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:324)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:393)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:307)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:223)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:136)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:177)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:95)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:79)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:761)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:745)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364)
+	at jdk.proxy2/jdk.proxy2.$Proxy119.persist(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:320)
+	at jdk.proxy2/jdk.proxy2.$Proxy119.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:636)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:752)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy122.save(Unknown Source)
+	at com.bridgelabz.payroll.service.EmployeeService.saveEmployee(EmployeeService.java:40)
+	at com.bridgelabz.payroll.controller.EmployeeController.createEmployee(EmployeeController.java:81)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-28 14:48:37 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-28 14:48:37 - Graceful shutdown complete
+2025-02-28 14:48:37 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-28 14:48:37 - HikariPool-1 - Shutdown initiated...
+2025-02-28 14:48:37 - HikariPool-1 - Shutdown completed.
+2025-02-28 14:49:00 - Starting PayrollApplication using Java 21.0.6 with PID 12701 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
+2025-02-28 14:49:00 - No active profile set, falling back to 1 default profile: "default"
+2025-02-28 14:49:05 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-28 14:49:05 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
+2025-02-28 14:49:05 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
+2025-02-28 14:49:06 - Finished Spring Data repository scanning in 221 ms. Found 1 JPA repository interface.
+2025-02-28 14:49:08 - Tomcat initialized with port 8080 (http)
+2025-02-28 14:49:08 - Starting service [Tomcat]
+2025-02-28 14:49:08 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-28 14:49:08 - Initializing Spring embedded WebApplicationContext
+2025-02-28 14:49:08 - Root WebApplicationContext: initialization completed in 7751 ms
+2025-02-28 14:49:09 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-28 14:49:09 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-28 14:49:10 - HHH000026: Second-level cache disabled
+2025-02-28 14:49:11 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-28 14:49:11 - HikariPool-1 - Starting...
+2025-02-28 14:49:12 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f849027
+2025-02-28 14:49:12 - HikariPool-1 - Start completed.
+2025-02-28 14:49:12 - Database ->
 	   name : MySQL
 	version : 8.0.41-0ubuntu0.24.04.1
 	  major : 8
 	  minor : 0
-2025-02-27 11:27:58 - Driver ->
+2025-02-28 14:49:12 - Driver ->
 	   name : MySQL Connector/J
 	version : mysql-connector-j-8.0.33 (Revision: 7d6b0800528b6b25c68b52dc10d6c1c8429c100c)
 	  major : 8
 	  minor : 0
-2025-02-27 11:27:58 - JDBC version : 4.2
-2025-02-27 11:27:58 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-27 11:27:58 - JDBC driver metadata reported database stores quoted identifiers in more than one case
-2025-02-27 11:27:58 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
-2025-02-27 11:27:58 - HHH10001005: Database info:
+2025-02-28 14:49:12 - JDBC version : 4.2
+2025-02-28 14:49:12 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-28 14:49:12 - JDBC driver metadata reported database stores quoted identifiers in more than one case
+2025-02-28 14:49:12 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2025-02-28 14:49:12 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.41
@@ -406,74 +447,173 @@ List of constraint violations:[
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-02-27 11:27:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-27 11:27:59 - alter table employee add column start_date date
-2025-02-27 11:27:59 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 11:27:59 - Initializing JpaMetamodelMappingContext…
-2025-02-27 11:27:59 - Finished initializing JpaMetamodelMappingContext
-2025-02-27 11:28:00 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
-2025-02-27 11:28:00 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
-2025-02-27 11:28:00 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-27 11:28:00 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-27 11:28:00 - Tomcat started on port 8080 (http) with context path '/'
-2025-02-27 11:28:00 - Started PayrollApplication in 7.283 seconds (process running for 8.172)
-2025-02-27 11:28:08 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-27 11:28:08 - Initializing Servlet 'dispatcherServlet'
-2025-02-27 11:28:08 - Completed initialization in 3 ms
-2025-02-27 11:28:18 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2025-02-27 11:28:18 - begin
-2025-02-27 11:28:19 - select count(*) from employee e1_0 where e1_0.id=?
-2025-02-27 11:28:19 - committing
-2025-02-27 11:28:30 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2025-02-27 11:28:30 - begin
-2025-02-27 11:28:30 - select count(*) from employee e1_0 where e1_0.id=?
-2025-02-27 11:28:30 - committing
-2025-02-27 11:28:38 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2025-02-27 11:28:38 - begin
-2025-02-27 11:28:38 - select count(*) from employee e1_0 where e1_0.id=?
-2025-02-27 11:28:38 - committing
-2025-02-27 11:28:38 - begin
-2025-02-27 11:28:38 - select e1_0.id,e1_0.gender,e1_0.name,e1_0.salary,e1_0.start_date from employee e1_0 where e1_0.id=?
-2025-02-27 11:28:38 - committing
-2025-02-27 11:28:38 - delete from employee where id=?
-2025-02-27 11:29:08 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-02-27 11:29:08 - Graceful shutdown complete
-2025-02-27 11:29:08 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 11:29:08 - HikariPool-1 - Shutdown initiated...
-2025-02-27 11:29:08 - HikariPool-1 - Shutdown completed.
-2025-02-27 11:30:15 - Starting PayrollApplication using Java 21.0.6 with PID 11436 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
-2025-02-27 11:30:15 - No active profile set, falling back to 1 default profile: "default"
-2025-02-27 11:30:16 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-27 11:30:16 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
-2025-02-27 11:30:17 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
-2025-02-27 11:30:17 - Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interface.
-2025-02-27 11:30:17 - Tomcat initialized with port 8080 (http)
-2025-02-27 11:30:17 - Starting service [Tomcat]
-2025-02-27 11:30:17 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-27 11:30:18 - Initializing Spring embedded WebApplicationContext
-2025-02-27 11:30:18 - Root WebApplicationContext: initialization completed in 2402 ms
-2025-02-27 11:30:18 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-27 11:30:18 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-27 11:30:18 - HHH000026: Second-level cache disabled
-2025-02-27 11:30:18 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-27 11:30:18 - HikariPool-1 - Starting...
-2025-02-27 11:30:19 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b7774d5
-2025-02-27 11:30:19 - HikariPool-1 - Start completed.
-2025-02-27 11:30:19 - Database ->
+2025-02-28 14:49:14 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-28 14:49:15 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-28 14:49:15 - Initializing JpaMetamodelMappingContext…
+2025-02-28 14:49:15 - Finished initializing JpaMetamodelMappingContext
+2025-02-28 14:49:16 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
+2025-02-28 14:49:16 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
+2025-02-28 14:49:16 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-28 14:49:17 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-28 14:49:18 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-28 14:49:19 - Started PayrollApplication in 22.866 seconds (process running for 25.329)
+2025-02-28 14:49:46 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-28 14:49:46 - Initializing Servlet 'dispatcherServlet'
+2025-02-28 14:49:46 - Completed initialization in 6 ms
+2025-02-28 14:49:47 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-02-28 14:49:47 - begin
+2025-02-28 14:49:47 - Executing identity-insert immediately
+2025-02-28 14:49:47 - rolling back
+2025-02-28 14:49:47 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.ConstraintViolationException: Validation failed for classes [com.bridgelabz.payroll.entity.Employee] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Salary should be a positive number', propertyPath=salary, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Salary should be a positive number'}
+	ConstraintViolationImpl{interpolatedMessage='Name can not be null', propertyPath=name, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Name can not be null'}
+]] with root cause
+jakarta.validation.ConstraintViolationException: Validation failed for classes [com.bridgelabz.payroll.entity.Employee] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Salary should be a positive number', propertyPath=salary, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Salary should be a positive number'}
+	ConstraintViolationImpl{interpolatedMessage='Name can not be null', propertyPath=name, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Name can not be null'}
+]
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:161)
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:84)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.preInsert(EntityIdentityInsertAction.java:201)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:79)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:682)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:293)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:274)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:324)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:393)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:307)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:223)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:136)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:177)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:95)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:79)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:761)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:745)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364)
+	at jdk.proxy2/jdk.proxy2.$Proxy119.persist(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:320)
+	at jdk.proxy2/jdk.proxy2.$Proxy119.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:636)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:752)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy122.save(Unknown Source)
+	at com.bridgelabz.payroll.service.EmployeeService.saveEmployee(EmployeeService.java:49)
+	at com.bridgelabz.payroll.controller.EmployeeController.createEmployee(EmployeeController.java:81)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-28 14:52:36 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-28 14:52:36 - Graceful shutdown complete
+2025-02-28 14:52:36 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-28 14:52:36 - HikariPool-1 - Shutdown initiated...
+2025-02-28 14:52:36 - HikariPool-1 - Shutdown completed.
+2025-02-28 14:54:27 - Starting PayrollApplication using Java 21.0.6 with PID 13121 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
+2025-02-28 14:54:27 - No active profile set, falling back to 1 default profile: "default"
+2025-02-28 14:54:32 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-28 14:54:33 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
+2025-02-28 14:54:33 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
+2025-02-28 14:54:33 - Finished Spring Data repository scanning in 281 ms. Found 1 JPA repository interface.
+2025-02-28 14:54:37 - Tomcat initialized with port 8080 (http)
+2025-02-28 14:54:37 - Starting service [Tomcat]
+2025-02-28 14:54:37 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-28 14:54:38 - Initializing Spring embedded WebApplicationContext
+2025-02-28 14:54:38 - Root WebApplicationContext: initialization completed in 10438 ms
+2025-02-28 14:54:39 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-28 14:54:39 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-28 14:54:39 - HHH000026: Second-level cache disabled
+2025-02-28 14:54:40 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-28 14:54:41 - HikariPool-1 - Starting...
+2025-02-28 14:54:41 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d20616a
+2025-02-28 14:54:41 - HikariPool-1 - Start completed.
+2025-02-28 14:54:41 - Database ->
 	   name : MySQL
 	version : 8.0.41-0ubuntu0.24.04.1
 	  major : 8
 	  minor : 0
-2025-02-27 11:30:19 - Driver ->
+2025-02-28 14:54:41 - Driver ->
 	   name : MySQL Connector/J
 	version : mysql-connector-j-8.0.33 (Revision: 7d6b0800528b6b25c68b52dc10d6c1c8429c100c)
 	  major : 8
 	  minor : 0
-2025-02-27 11:30:19 - JDBC version : 4.2
-2025-02-27 11:30:19 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-27 11:30:19 - JDBC driver metadata reported database stores quoted identifiers in more than one case
-2025-02-27 11:30:19 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
-2025-02-27 11:30:19 - HHH10001005: Database info:
+2025-02-28 14:54:41 - JDBC version : 4.2
+2025-02-28 14:54:42 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-28 14:54:42 - JDBC driver metadata reported database stores quoted identifiers in more than one case
+2025-02-28 14:54:42 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2025-02-28 14:54:42 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.41
@@ -481,70 +621,173 @@ List of constraint violations:[
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-02-27 11:30:20 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-27 11:30:20 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 11:30:20 - Initializing JpaMetamodelMappingContext…
-2025-02-27 11:30:20 - Finished initializing JpaMetamodelMappingContext
-2025-02-27 11:30:20 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
-2025-02-27 11:30:20 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
-2025-02-27 11:30:20 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-27 11:30:21 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-27 11:30:21 - Tomcat started on port 8080 (http) with context path '/'
-2025-02-27 11:30:21 - Started PayrollApplication in 6.864 seconds (process running for 7.685)
-2025-02-27 11:30:33 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-27 11:30:33 - Initializing Servlet 'dispatcherServlet'
-2025-02-27 11:30:33 - Completed initialization in 4 ms
-2025-02-27 11:30:33 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2025-02-27 11:30:33 - begin
-2025-02-27 11:30:34 - select count(*) from employee e1_0 where e1_0.id=?
-2025-02-27 11:30:34 - committing
-2025-02-27 11:31:07 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2025-02-27 11:31:07 - begin
-2025-02-27 11:31:07 - Executing identity-insert immediately
-2025-02-27 11:31:07 - insert into employee (gender,name,salary,start_date) values (?,?,?,?)
-2025-02-27 11:31:07 - committing
-2025-02-27 11:31:39 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2025-02-27 11:31:39 - begin
-2025-02-27 11:31:39 - Executing identity-insert immediately
-2025-02-27 11:31:39 - rolling back
-2025-02-27 11:38:44 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-02-27 11:38:44 - Graceful shutdown complete
-2025-02-27 11:38:44 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 11:38:44 - HikariPool-1 - Shutdown initiated...
-2025-02-27 11:38:44 - HikariPool-1 - Shutdown completed.
-2025-02-27 11:38:52 - Starting PayrollApplication using Java 21.0.6 with PID 11806 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
-2025-02-27 11:38:52 - No active profile set, falling back to 1 default profile: "default"
-2025-02-27 11:38:54 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-27 11:38:54 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
-2025-02-27 11:38:54 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
-2025-02-27 11:38:54 - Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interface.
-2025-02-27 11:38:55 - Tomcat initialized with port 8080 (http)
-2025-02-27 11:38:55 - Starting service [Tomcat]
-2025-02-27 11:38:55 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-27 11:38:55 - Initializing Spring embedded WebApplicationContext
-2025-02-27 11:38:55 - Root WebApplicationContext: initialization completed in 2737 ms
-2025-02-27 11:38:55 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-27 11:38:55 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-27 11:38:55 - HHH000026: Second-level cache disabled
-2025-02-27 11:38:55 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-27 11:38:56 - HikariPool-1 - Starting...
-2025-02-27 11:38:56 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14be750c
-2025-02-27 11:38:56 - HikariPool-1 - Start completed.
-2025-02-27 11:38:56 - Database ->
+2025-02-28 14:54:46 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-28 14:54:46 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-28 14:54:47 - Initializing JpaMetamodelMappingContext…
+2025-02-28 14:54:47 - Finished initializing JpaMetamodelMappingContext
+2025-02-28 14:54:47 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
+2025-02-28 14:54:47 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
+2025-02-28 14:54:48 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-28 14:54:49 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-28 14:54:50 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-28 14:54:50 - Started PayrollApplication in 27.396 seconds (process running for 30.217)
+2025-02-28 14:55:13 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-28 14:55:13 - Initializing Servlet 'dispatcherServlet'
+2025-02-28 14:55:13 - Completed initialization in 5 ms
+2025-02-28 14:55:14 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-02-28 14:55:14 - begin
+2025-02-28 14:55:14 - Executing identity-insert immediately
+2025-02-28 14:55:14 - rolling back
+2025-02-28 14:55:14 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.ConstraintViolationException: Validation failed for classes [com.bridgelabz.payroll.entity.Employee] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Salary should be a positive number', propertyPath=salary, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Salary should be a positive number'}
+	ConstraintViolationImpl{interpolatedMessage='Name can not be null', propertyPath=name, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Name can not be null'}
+]] with root cause
+jakarta.validation.ConstraintViolationException: Validation failed for classes [com.bridgelabz.payroll.entity.Employee] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Salary should be a positive number', propertyPath=salary, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Salary should be a positive number'}
+	ConstraintViolationImpl{interpolatedMessage='Name can not be null', propertyPath=name, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Name can not be null'}
+]
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:161)
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:84)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.preInsert(EntityIdentityInsertAction.java:201)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:79)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:682)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:293)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:274)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:324)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:393)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:307)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:223)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:136)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:177)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:95)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:79)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:761)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:745)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364)
+	at jdk.proxy2/jdk.proxy2.$Proxy119.persist(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:320)
+	at jdk.proxy2/jdk.proxy2.$Proxy119.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:636)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:752)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy122.save(Unknown Source)
+	at com.bridgelabz.payroll.service.EmployeeService.saveEmployee(EmployeeService.java:48)
+	at com.bridgelabz.payroll.controller.EmployeeController.createEmployee(EmployeeController.java:81)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-28 14:58:28 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-28 14:58:28 - Graceful shutdown complete
+2025-02-28 14:58:28 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-28 14:58:28 - HikariPool-1 - Shutdown initiated...
+2025-02-28 14:58:28 - HikariPool-1 - Shutdown completed.
+2025-02-28 14:59:04 - Starting PayrollApplication using Java 21.0.6 with PID 13328 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
+2025-02-28 14:59:04 - No active profile set, falling back to 1 default profile: "default"
+2025-02-28 14:59:09 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-28 14:59:10 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
+2025-02-28 14:59:10 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
+2025-02-28 14:59:10 - Finished Spring Data repository scanning in 187 ms. Found 1 JPA repository interface.
+2025-02-28 14:59:13 - Tomcat initialized with port 8080 (http)
+2025-02-28 14:59:13 - Starting service [Tomcat]
+2025-02-28 14:59:13 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-28 14:59:13 - Initializing Spring embedded WebApplicationContext
+2025-02-28 14:59:13 - Root WebApplicationContext: initialization completed in 7969 ms
+2025-02-28 14:59:14 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-28 14:59:14 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-28 14:59:14 - HHH000026: Second-level cache disabled
+2025-02-28 14:59:15 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-28 14:59:15 - HikariPool-1 - Starting...
+2025-02-28 14:59:16 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d20616a
+2025-02-28 14:59:16 - HikariPool-1 - Start completed.
+2025-02-28 14:59:16 - Database ->
 	   name : MySQL
 	version : 8.0.41-0ubuntu0.24.04.1
 	  major : 8
 	  minor : 0
-2025-02-27 11:38:56 - Driver ->
+2025-02-28 14:59:16 - Driver ->
 	   name : MySQL Connector/J
 	version : mysql-connector-j-8.0.33 (Revision: 7d6b0800528b6b25c68b52dc10d6c1c8429c100c)
 	  major : 8
 	  minor : 0
-2025-02-27 11:38:56 - JDBC version : 4.2
-2025-02-27 11:38:56 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-27 11:38:56 - JDBC driver metadata reported database stores quoted identifiers in more than one case
-2025-02-27 11:38:56 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
-2025-02-27 11:38:56 - HHH10001005: Database info:
+2025-02-28 14:59:16 - JDBC version : 4.2
+2025-02-28 14:59:16 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-28 14:59:16 - JDBC driver metadata reported database stores quoted identifiers in more than one case
+2025-02-28 14:59:16 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2025-02-28 14:59:16 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.41
@@ -552,70 +795,177 @@ List of constraint violations:[
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-02-27 11:38:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-27 11:38:58 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 11:38:58 - Initializing JpaMetamodelMappingContext…
-2025-02-27 11:38:58 - Finished initializing JpaMetamodelMappingContext
-2025-02-27 11:38:58 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
-2025-02-27 11:38:58 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
-2025-02-27 11:38:58 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-27 11:38:59 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-27 11:38:59 - Tomcat started on port 8080 (http) with context path '/'
-2025-02-27 11:38:59 - Started PayrollApplication in 8.604 seconds (process running for 9.846)
-2025-02-27 11:39:02 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-27 11:39:02 - Initializing Servlet 'dispatcherServlet'
-2025-02-27 11:39:02 - Completed initialization in 2 ms
-2025-02-27 11:39:02 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2025-02-27 11:39:02 - begin
-2025-02-27 11:39:02 - Executing identity-insert immediately
-2025-02-27 11:39:02 - rolling back
-2025-02-27 11:39:28 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2025-02-27 11:39:28 - begin
-2025-02-27 11:39:28 - Executing identity-insert immediately
-2025-02-27 11:39:28 - rolling back
-2025-02-27 11:39:39 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2025-02-27 11:39:39 - begin
-2025-02-27 11:39:39 - Executing identity-insert immediately
-2025-02-27 11:39:39 - insert into employee (gender,name,salary,start_date) values (?,?,?,?)
-2025-02-27 11:39:39 - committing
-2025-02-27 11:41:19 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-02-27 11:41:19 - Graceful shutdown complete
-2025-02-27 11:41:19 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 11:41:19 - HikariPool-1 - Shutdown initiated...
-2025-02-27 11:41:19 - HikariPool-1 - Shutdown completed.
-2025-02-27 11:41:24 - Starting PayrollApplication using Java 21.0.6 with PID 11977 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
-2025-02-27 11:41:24 - No active profile set, falling back to 1 default profile: "default"
-2025-02-27 11:41:26 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-27 11:41:26 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
-2025-02-27 11:41:26 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
-2025-02-27 11:41:26 - Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interface.
-2025-02-27 11:41:27 - Tomcat initialized with port 8080 (http)
-2025-02-27 11:41:27 - Starting service [Tomcat]
-2025-02-27 11:41:27 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-27 11:41:27 - Initializing Spring embedded WebApplicationContext
-2025-02-27 11:41:27 - Root WebApplicationContext: initialization completed in 3129 ms
-2025-02-27 11:41:27 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-27 11:41:27 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-27 11:41:27 - HHH000026: Second-level cache disabled
-2025-02-27 11:41:28 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-27 11:41:28 - HikariPool-1 - Starting...
-2025-02-27 11:41:28 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cfcac13
-2025-02-27 11:41:28 - HikariPool-1 - Start completed.
-2025-02-27 11:41:28 - Database ->
+2025-02-28 14:59:20 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-28 14:59:20 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-28 14:59:20 - Initializing JpaMetamodelMappingContext…
+2025-02-28 14:59:20 - Finished initializing JpaMetamodelMappingContext
+2025-02-28 14:59:21 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
+2025-02-28 14:59:21 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
+2025-02-28 14:59:21 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-28 14:59:22 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-28 14:59:23 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-28 14:59:23 - Started PayrollApplication in 22.16 seconds (process running for 26.468)
+2025-02-28 14:59:44 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-28 14:59:44 - Initializing Servlet 'dispatcherServlet'
+2025-02-28 14:59:44 - Completed initialization in 17 ms
+2025-02-28 14:59:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-02-28 14:59:53 - begin
+2025-02-28 14:59:54 - select e1_0.id,e1_0.departments,e1_0.gender,e1_0.name,e1_0.note,e1_0.profile_picture,e1_0.salary,e1_0.start_date from employee e1_0
+2025-02-28 14:59:54 - committing
+2025-02-28 15:00:30 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-02-28 15:00:30 - begin
+2025-02-28 15:00:30 - Executing identity-insert immediately
+2025-02-28 15:00:30 - rolling back
+2025-02-28 15:00:30 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jakarta.validation.ConstraintViolationException: Validation failed for classes [com.bridgelabz.payroll.entity.Employee] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Salary should be a positive number', propertyPath=salary, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Salary should be a positive number'}
+	ConstraintViolationImpl{interpolatedMessage='Name can not be null', propertyPath=name, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Name can not be null'}
+]] with root cause
+jakarta.validation.ConstraintViolationException: Validation failed for classes [com.bridgelabz.payroll.entity.Employee] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Salary should be a positive number', propertyPath=salary, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Salary should be a positive number'}
+	ConstraintViolationImpl{interpolatedMessage='Name can not be null', propertyPath=name, rootBeanClass=class com.bridgelabz.payroll.entity.Employee, messageTemplate='Name can not be null'}
+]
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:161)
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:84)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.preInsert(EntityIdentityInsertAction.java:201)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:79)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:682)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:293)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:274)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:324)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:393)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:307)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:223)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:136)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:177)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:95)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:79)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:761)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:745)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364)
+	at jdk.proxy2/jdk.proxy2.$Proxy119.persist(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:320)
+	at jdk.proxy2/jdk.proxy2.$Proxy119.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:636)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:752)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy122.save(Unknown Source)
+	at com.bridgelabz.payroll.service.EmployeeService.saveEmployee(EmployeeService.java:48)
+	at com.bridgelabz.payroll.controller.EmployeeController.createEmployee(EmployeeController.java:81)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-28 15:10:27 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-28 15:10:27 - Graceful shutdown complete
+2025-02-28 15:10:27 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-28 15:10:27 - HikariPool-1 - Shutdown initiated...
+2025-02-28 15:10:27 - HikariPool-1 - Shutdown completed.
+2025-02-28 15:11:39 - Starting PayrollApplication using Java 21.0.6 with PID 14590 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
+2025-02-28 15:11:39 - No active profile set, falling back to 1 default profile: "default"
+2025-02-28 15:11:43 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-28 15:11:43 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
+2025-02-28 15:11:43 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
+2025-02-28 15:11:43 - Finished Spring Data repository scanning in 152 ms. Found 1 JPA repository interface.
+2025-02-28 15:11:45 - Tomcat initialized with port 8080 (http)
+2025-02-28 15:11:45 - Starting service [Tomcat]
+2025-02-28 15:11:45 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-28 15:11:45 - Initializing Spring embedded WebApplicationContext
+2025-02-28 15:11:45 - Root WebApplicationContext: initialization completed in 5951 ms
+2025-02-28 15:11:46 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-28 15:11:46 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-28 15:11:46 - HHH000026: Second-level cache disabled
+2025-02-28 15:11:47 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-28 15:11:47 - HikariPool-1 - Starting...
+2025-02-28 15:11:48 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7893c715
+2025-02-28 15:11:48 - HikariPool-1 - Start completed.
+2025-02-28 15:11:48 - Database ->
 	   name : MySQL
 	version : 8.0.41-0ubuntu0.24.04.1
 	  major : 8
 	  minor : 0
-2025-02-27 11:41:28 - Driver ->
+2025-02-28 15:11:48 - Driver ->
 	   name : MySQL Connector/J
 	version : mysql-connector-j-8.0.33 (Revision: 7d6b0800528b6b25c68b52dc10d6c1c8429c100c)
 	  major : 8
 	  minor : 0
-2025-02-27 11:41:28 - JDBC version : 4.2
-2025-02-27 11:41:28 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-27 11:41:28 - JDBC driver metadata reported database stores quoted identifiers in more than one case
-2025-02-27 11:41:28 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
-2025-02-27 11:41:28 - HHH10001005: Database info:
+2025-02-28 15:11:48 - JDBC version : 4.2
+2025-02-28 15:11:48 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-28 15:11:48 - JDBC driver metadata reported database stores quoted identifiers in more than one case
+2025-02-28 15:11:48 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2025-02-28 15:11:48 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.41
@@ -623,54 +973,62 @@ List of constraint violations:[
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-02-27 11:41:30 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-27 11:41:30 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 11:41:30 - Initializing JpaMetamodelMappingContext…
-2025-02-27 11:41:30 - Finished initializing JpaMetamodelMappingContext
-2025-02-27 11:41:30 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
-2025-02-27 11:41:30 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
-2025-02-27 11:41:30 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-27 11:41:30 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-27 11:41:31 - Tomcat started on port 8080 (http) with context path '/'
-2025-02-27 11:41:31 - Started PayrollApplication in 8.154 seconds (process running for 8.951)
-2025-02-27 11:42:23 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-02-27 11:42:23 - Graceful shutdown complete
-2025-02-27 11:42:23 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 11:42:23 - HikariPool-1 - Shutdown initiated...
-2025-02-27 11:42:23 - HikariPool-1 - Shutdown completed.
-2025-02-27 11:45:17 - Starting PayrollApplication using Java 21.0.6 with PID 12168 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
-2025-02-27 11:45:17 - No active profile set, falling back to 1 default profile: "default"
-2025-02-27 11:45:19 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-27 11:45:19 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
-2025-02-27 11:45:19 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
-2025-02-27 11:45:19 - Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interface.
-2025-02-27 11:45:20 - Tomcat initialized with port 8080 (http)
-2025-02-27 11:45:20 - Starting service [Tomcat]
-2025-02-27 11:45:20 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-27 11:45:20 - Initializing Spring embedded WebApplicationContext
-2025-02-27 11:45:20 - Root WebApplicationContext: initialization completed in 2987 ms
-2025-02-27 11:45:21 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-27 11:45:21 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-27 11:45:21 - HHH000026: Second-level cache disabled
-2025-02-27 11:45:21 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-27 11:45:21 - HikariPool-1 - Starting...
-2025-02-27 11:45:21 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a19a0fe
-2025-02-27 11:45:21 - HikariPool-1 - Start completed.
-2025-02-27 11:45:21 - Database ->
+2025-02-28 15:11:51 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-28 15:11:51 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-28 15:11:51 - Initializing JpaMetamodelMappingContext…
+2025-02-28 15:11:51 - Finished initializing JpaMetamodelMappingContext
+2025-02-28 15:11:52 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
+2025-02-28 15:11:52 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
+2025-02-28 15:11:52 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-28 15:11:53 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-28 15:11:54 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-28 15:11:54 - Started PayrollApplication in 18.412 seconds (process running for 21.156)
+2025-02-28 15:12:06 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-28 15:12:06 - Initializing Servlet 'dispatcherServlet'
+2025-02-28 15:12:06 - Completed initialization in 12 ms
+2025-02-28 15:12:06 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-02-28 15:12:06 - begin
+2025-02-28 15:12:07 - Executing identity-insert immediately
+2025-02-28 15:12:07 - insert into employee (departments,gender,name,note,profile_picture,salary,start_date) values (?,?,?,?,?,?,?)
+2025-02-28 15:12:07 - committing
+2025-02-28 15:24:09 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-28 15:24:09 - Graceful shutdown complete
+2025-02-28 15:24:09 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-28 15:24:09 - HikariPool-1 - Shutdown initiated...
+2025-02-28 15:24:09 - HikariPool-1 - Shutdown completed.
+2025-02-28 15:24:32 - Starting PayrollApplication using Java 21.0.6 with PID 15318 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
+2025-02-28 15:24:32 - No active profile set, falling back to 1 default profile: "default"
+2025-02-28 15:24:38 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-28 15:24:38 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
+2025-02-28 15:24:38 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
+2025-02-28 15:24:38 - Finished Spring Data repository scanning in 224 ms. Found 1 JPA repository interface.
+2025-02-28 15:24:41 - Tomcat initialized with port 8080 (http)
+2025-02-28 15:24:41 - Starting service [Tomcat]
+2025-02-28 15:24:41 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-28 15:24:41 - Initializing Spring embedded WebApplicationContext
+2025-02-28 15:24:41 - Root WebApplicationContext: initialization completed in 8445 ms
+2025-02-28 15:24:42 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-28 15:24:42 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-28 15:24:42 - HHH000026: Second-level cache disabled
+2025-02-28 15:24:44 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-28 15:24:44 - HikariPool-1 - Starting...
+2025-02-28 15:24:45 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40f9f60d
+2025-02-28 15:24:45 - HikariPool-1 - Start completed.
+2025-02-28 15:24:45 - Database ->
 	   name : MySQL
 	version : 8.0.41-0ubuntu0.24.04.1
 	  major : 8
 	  minor : 0
-2025-02-27 11:45:21 - Driver ->
+2025-02-28 15:24:45 - Driver ->
 	   name : MySQL Connector/J
 	version : mysql-connector-j-8.0.33 (Revision: 7d6b0800528b6b25c68b52dc10d6c1c8429c100c)
 	  major : 8
 	  minor : 0
-2025-02-27 11:45:21 - JDBC version : 4.2
-2025-02-27 11:45:21 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-27 11:45:21 - JDBC driver metadata reported database stores quoted identifiers in more than one case
-2025-02-27 11:45:21 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
-2025-02-27 11:45:22 - HHH10001005: Database info:
+2025-02-28 15:24:45 - JDBC version : 4.2
+2025-02-28 15:24:45 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-28 15:24:45 - JDBC driver metadata reported database stores quoted identifiers in more than one case
+2025-02-28 15:24:45 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2025-02-28 15:24:45 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.41
@@ -678,409 +1036,54 @@ List of constraint violations:[
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-02-27 11:45:23 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-27 11:45:23 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 11:45:23 - Initializing JpaMetamodelMappingContext…
-2025-02-27 11:45:23 - Finished initializing JpaMetamodelMappingContext
-2025-02-27 11:45:23 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
-2025-02-27 11:45:23 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
-2025-02-27 11:45:23 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-27 11:45:24 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-27 11:45:24 - Tomcat started on port 8080 (http) with context path '/'
-2025-02-27 11:45:24 - Started PayrollApplication in 7.663 seconds (process running for 8.621)
-2025-02-27 11:45:42 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-27 11:45:42 - Initializing Servlet 'dispatcherServlet'
-2025-02-27 11:45:42 - Completed initialization in 2 ms
-2025-02-27 11:45:43 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2025-02-27 11:45:43 - begin
-2025-02-27 11:45:43 - Executing identity-insert immediately
-2025-02-27 11:45:43 - insert into employee (gender,name,salary,start_date) values (?,?,?,?)
-2025-02-27 11:45:43 - committing
-2025-02-27 11:45:48 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2025-02-27 11:45:48 - begin
-2025-02-27 11:45:48 - Executing identity-insert immediately
-2025-02-27 11:45:48 - insert into employee (gender,name,salary,start_date) values (?,?,?,?)
-2025-02-27 11:45:48 - committing
-2025-02-27 12:03:03 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-02-27 12:03:03 - Graceful shutdown complete
-2025-02-27 12:03:03 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 12:03:03 - HikariPool-1 - Shutdown initiated...
-2025-02-27 12:03:03 - HikariPool-1 - Shutdown completed.
-2025-02-27 12:03:10 - Starting PayrollApplication using Java 21.0.6 with PID 13110 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
-2025-02-27 12:03:10 - No active profile set, falling back to 1 default profile: "default"
-2025-02-27 12:03:12 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-27 12:03:12 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
-2025-02-27 12:03:12 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
-2025-02-27 12:03:12 - Finished Spring Data repository scanning in 173 ms. Found 1 JPA repository interface.
-2025-02-27 12:03:13 - Tomcat initialized with port 8080 (http)
-2025-02-27 12:03:13 - Starting service [Tomcat]
-2025-02-27 12:03:13 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-27 12:03:13 - Initializing Spring embedded WebApplicationContext
-2025-02-27 12:03:13 - Root WebApplicationContext: initialization completed in 3437 ms
-2025-02-27 12:03:14 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-27 12:03:14 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-27 12:03:14 - HHH000026: Second-level cache disabled
-2025-02-27 12:03:14 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-27 12:03:14 - HikariPool-1 - Starting...
-2025-02-27 12:03:15 - unable to obtain isolated JDBC connection [n/a]
-java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:111)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
-	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81)
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
-	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.bridgelabz.payroll.PayrollApplication.main(PayrollApplication.java:10)
-Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieval is not allowed
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:86)
-	at com.mysql.cj.protocol.a.authentication.Sha256PasswordPlugin.nextAuthenticationStep(Sha256PasswordPlugin.java:140)
-	at com.mysql.cj.protocol.a.authentication.Sha256PasswordPlugin.nextAuthenticationStep(Sha256PasswordPlugin.java:59)
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:443)
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:213)
-	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1430)
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:134)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
-	... 48 common frames omitted
-2025-02-27 12:03:15 - SQL Error: 0, SQLState: 08001
-2025-02-27 12:03:15 - Public Key Retrieval is not allowed
-2025-02-27 12:03:15 - HHH000342: Could not obtain connection to query metadata
-org.hibernate.exception.JDBCConnectionException: unable to obtain isolated JDBC connection [Public Key Retrieval is not allowed] [n/a]
-	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100)
-	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81)
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
-	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.bridgelabz.payroll.PayrollApplication.main(PayrollApplication.java:10)
-Caused by: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:111)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
-	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
-	... 35 common frames omitted
-Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieval is not allowed
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:86)
-	at com.mysql.cj.protocol.a.authentication.Sha256PasswordPlugin.nextAuthenticationStep(Sha256PasswordPlugin.java:140)
-	at com.mysql.cj.protocol.a.authentication.Sha256PasswordPlugin.nextAuthenticationStep(Sha256PasswordPlugin.java:59)
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:443)
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:213)
-	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1430)
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:134)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
-	... 48 common frames omitted
-2025-02-27 12:03:16 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-27 12:03:16 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
-2025-02-27 12:03:16 - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-02-27 12:03:17 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-27 12:03:17 - HikariPool-1 - Starting...
-2025-02-27 12:03:18 - Unable to open JDBC Connection for DDL execution [n/a]
-java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:111)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
-	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
-	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
-	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
-	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65)
-	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
-	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
-	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
-	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
-	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
-	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
-	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324)
-	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.bridgelabz.payroll.PayrollApplication.main(PayrollApplication.java:10)
-Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieval is not allowed
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:86)
-	at com.mysql.cj.protocol.a.authentication.Sha256PasswordPlugin.nextAuthenticationStep(Sha256PasswordPlugin.java:140)
-	at com.mysql.cj.protocol.a.authentication.Sha256PasswordPlugin.nextAuthenticationStep(Sha256PasswordPlugin.java:59)
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:443)
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:213)
-	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1430)
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:134)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
-	... 53 common frames omitted
-2025-02-27 12:03:18 - SQL Error: 0, SQLState: 08001
-2025-02-27 12:03:18 - Public Key Retrieval is not allowed
-2025-02-27 12:03:18 - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Public Key Retrieval is not allowed] [n/a]
-2025-02-27 12:03:18 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Public Key Retrieval is not allowed] [n/a]
-2025-02-27 12:03:18 - Stopping service [Tomcat]
-2025-02-27 12:03:18 - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-02-27 12:03:18 - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Public Key Retrieval is not allowed] [n/a]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.bridgelabz.payroll.PayrollApplication.main(PayrollApplication.java:10)
-Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Public Key Retrieval is not allowed] [n/a]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
-	... 15 common frames omitted
-Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Public Key Retrieval is not allowed] [n/a]
-	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:51)
-	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
-	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
-	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
-	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65)
-	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
-	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
-	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
-	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
-	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
-	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
-	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324)
-	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
-	... 19 common frames omitted
-Caused by: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:111)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
-	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
-	... 40 common frames omitted
-Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieval is not allowed
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:86)
-	at com.mysql.cj.protocol.a.authentication.Sha256PasswordPlugin.nextAuthenticationStep(Sha256PasswordPlugin.java:140)
-	at com.mysql.cj.protocol.a.authentication.Sha256PasswordPlugin.nextAuthenticationStep(Sha256PasswordPlugin.java:59)
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:443)
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:213)
-	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1430)
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:134)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
-	... 53 common frames omitted
-2025-02-27 12:03:57 - Starting PayrollApplication using Java 21.0.6 with PID 13208 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
-2025-02-27 12:03:57 - No active profile set, falling back to 1 default profile: "default"
-2025-02-27 12:04:00 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-27 12:04:00 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
-2025-02-27 12:04:00 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
-2025-02-27 12:04:00 - Finished Spring Data repository scanning in 200 ms. Found 1 JPA repository interface.
-2025-02-27 12:04:02 - Tomcat initialized with port 8080 (http)
-2025-02-27 12:04:02 - Starting service [Tomcat]
-2025-02-27 12:04:02 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-27 12:04:02 - Initializing Spring embedded WebApplicationContext
-2025-02-27 12:04:02 - Root WebApplicationContext: initialization completed in 4317 ms
-2025-02-27 12:04:02 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-27 12:04:02 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-27 12:04:02 - HHH000026: Second-level cache disabled
-2025-02-27 12:04:03 - Starting PayrollApplication using Java 21.0.6 with PID 13265 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
-2025-02-27 12:04:03 - No active profile set, falling back to 1 default profile: "default"
-2025-02-27 12:04:03 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-27 12:04:03 - HikariPool-1 - Starting...
-2025-02-27 12:04:04 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@69e2fe3b
-2025-02-27 12:04:04 - HikariPool-1 - Start completed.
-2025-02-27 12:04:04 - Database ->
+2025-02-28 15:24:50 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-28 15:24:50 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-28 15:24:51 - Initializing JpaMetamodelMappingContext…
+2025-02-28 15:24:51 - Finished initializing JpaMetamodelMappingContext
+2025-02-28 15:24:51 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
+2025-02-28 15:24:52 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
+2025-02-28 15:24:52 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-28 15:24:55 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-28 15:24:57 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-28 15:24:58 - Started PayrollApplication in 28.513 seconds (process running for 30.876)
+2025-02-28 15:26:01 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-28 15:26:01 - Graceful shutdown complete
+2025-02-28 15:26:01 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-28 15:26:01 - HikariPool-1 - Shutdown initiated...
+2025-02-28 15:26:01 - HikariPool-1 - Shutdown completed.
+2025-02-28 15:26:21 - Starting PayrollApplication using Java 21.0.6 with PID 15639 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
+2025-02-28 15:26:21 - No active profile set, falling back to 1 default profile: "default"
+2025-02-28 15:26:25 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-28 15:26:25 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
+2025-02-28 15:26:25 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
+2025-02-28 15:26:25 - Finished Spring Data repository scanning in 204 ms. Found 1 JPA repository interface.
+2025-02-28 15:26:28 - Tomcat initialized with port 8080 (http)
+2025-02-28 15:26:28 - Starting service [Tomcat]
+2025-02-28 15:26:28 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-28 15:26:28 - Initializing Spring embedded WebApplicationContext
+2025-02-28 15:26:28 - Root WebApplicationContext: initialization completed in 6912 ms
+2025-02-28 15:26:29 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-28 15:26:29 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-28 15:26:29 - HHH000026: Second-level cache disabled
+2025-02-28 15:26:30 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-28 15:26:31 - HikariPool-1 - Starting...
+2025-02-28 15:26:31 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1124910c
+2025-02-28 15:26:31 - HikariPool-1 - Start completed.
+2025-02-28 15:26:31 - Database ->
 	   name : MySQL
 	version : 8.0.41-0ubuntu0.24.04.1
 	  major : 8
 	  minor : 0
-2025-02-27 12:04:04 - Driver ->
+2025-02-28 15:26:31 - Driver ->
 	   name : MySQL Connector/J
 	version : mysql-connector-j-8.0.33 (Revision: 7d6b0800528b6b25c68b52dc10d6c1c8429c100c)
 	  major : 8
 	  minor : 0
-2025-02-27 12:04:04 - JDBC version : 4.2
-2025-02-27 12:04:04 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-27 12:04:04 - JDBC driver metadata reported database stores quoted identifiers in more than one case
-2025-02-27 12:04:04 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
-2025-02-27 12:04:04 - HHH10001005: Database info:
+2025-02-28 15:26:31 - JDBC version : 4.2
+2025-02-28 15:26:32 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-28 15:26:32 - JDBC driver metadata reported database stores quoted identifiers in more than one case
+2025-02-28 15:26:32 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2025-02-28 15:26:32 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.41
@@ -1088,142 +1091,40 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-02-27 12:04:06 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-27 12:04:06 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
-2025-02-27 12:04:06 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
-2025-02-27 12:04:06 - Finished Spring Data repository scanning in 166 ms. Found 1 JPA repository interface.
-2025-02-27 12:04:07 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-27 12:04:07 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 12:04:07 - Initializing JpaMetamodelMappingContext…
-2025-02-27 12:04:07 - Finished initializing JpaMetamodelMappingContext
-2025-02-27 12:04:07 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
-2025-02-27 12:04:07 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
-2025-02-27 12:04:08 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-27 12:04:08 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-27 12:04:08 - Tomcat initialized with port 8080 (http)
-2025-02-27 12:04:08 - Starting service [Tomcat]
-2025-02-27 12:04:08 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-27 12:04:09 - Initializing Spring embedded WebApplicationContext
-2025-02-27 12:04:09 - Root WebApplicationContext: initialization completed in 5535 ms
-2025-02-27 12:04:09 - Tomcat started on port 8080 (http) with context path '/'
-2025-02-27 12:04:09 - Started PayrollApplication in 12.376 seconds (process running for 13.24)
-2025-02-27 12:04:09 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-27 12:04:09 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-27 12:04:09 - HHH000026: Second-level cache disabled
-2025-02-27 12:04:10 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-27 12:04:10 - HikariPool-1 - Starting...
-2025-02-27 12:04:10 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7845b21a
-2025-02-27 12:04:10 - HikariPool-1 - Start completed.
-2025-02-27 12:04:10 - Database ->
-	   name : MySQL
-	version : 8.0.41-0ubuntu0.24.04.1
-	  major : 8
-	  minor : 0
-2025-02-27 12:04:10 - Driver ->
-	   name : MySQL Connector/J
-	version : mysql-connector-j-8.0.33 (Revision: 7d6b0800528b6b25c68b52dc10d6c1c8429c100c)
-	  major : 8
-	  minor : 0
-2025-02-27 12:04:10 - JDBC version : 4.2
-2025-02-27 12:04:10 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-27 12:04:10 - JDBC driver metadata reported database stores quoted identifiers in more than one case
-2025-02-27 12:04:10 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
-2025-02-27 12:04:10 - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.41
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-02-27 12:04:12 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-27 12:04:12 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 12:04:12 - Initializing JpaMetamodelMappingContext…
-2025-02-27 12:04:12 - Finished initializing JpaMetamodelMappingContext
-2025-02-27 12:04:12 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
-2025-02-27 12:04:12 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
-2025-02-27 12:04:12 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-27 12:04:12 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-27 12:04:13 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2025-02-27 12:04:13 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 12:04:13 - HikariPool-1 - Shutdown initiated...
-2025-02-27 12:04:13 - HikariPool-1 - Shutdown completed.
-2025-02-27 12:04:13 - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-02-27 12:04:13 - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-2025-02-27 12:04:23 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-02-27 12:04:23 - Graceful shutdown complete
-2025-02-27 12:04:23 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 12:04:23 - HikariPool-1 - Shutdown initiated...
-2025-02-27 12:04:23 - HikariPool-1 - Shutdown completed.
-2025-02-27 12:04:28 - Starting PayrollApplication using Java 21.0.6 with PID 13388 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
-2025-02-27 12:04:28 - No active profile set, falling back to 1 default profile: "default"
-2025-02-27 12:04:30 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-27 12:04:30 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
-2025-02-27 12:04:30 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
-2025-02-27 12:04:30 - Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interface.
-2025-02-27 12:04:31 - Tomcat initialized with port 8080 (http)
-2025-02-27 12:04:31 - Starting service [Tomcat]
-2025-02-27 12:04:31 - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-02-27 12:04:31 - Initializing Spring embedded WebApplicationContext
-2025-02-27 12:04:31 - Root WebApplicationContext: initialization completed in 2646 ms
-2025-02-27 12:04:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-27 12:04:31 - HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-02-27 12:04:32 - HHH000026: Second-level cache disabled
-2025-02-27 12:04:32 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-27 12:04:32 - HikariPool-1 - Starting...
-2025-02-27 12:04:32 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39ace1a7
-2025-02-27 12:04:32 - HikariPool-1 - Start completed.
-2025-02-27 12:04:32 - Database ->
-	   name : MySQL
-	version : 8.0.41-0ubuntu0.24.04.1
-	  major : 8
-	  minor : 0
-2025-02-27 12:04:32 - Driver ->
-	   name : MySQL Connector/J
-	version : mysql-connector-j-8.0.33 (Revision: 7d6b0800528b6b25c68b52dc10d6c1c8429c100c)
-	  major : 8
-	  minor : 0
-2025-02-27 12:04:32 - JDBC version : 4.2
-2025-02-27 12:04:32 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-27 12:04:32 - JDBC driver metadata reported database stores quoted identifiers in more than one case
-2025-02-27 12:04:32 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
-2025-02-27 12:04:32 - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.41
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-02-27 12:04:33 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-27 12:04:33 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-27 12:04:33 - Initializing JpaMetamodelMappingContext…
-2025-02-27 12:04:34 - Finished initializing JpaMetamodelMappingContext
-2025-02-27 12:04:34 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
-2025-02-27 12:04:34 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
-2025-02-27 12:04:34 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-27 12:04:34 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-27 12:04:34 - Tomcat started on port 8080 (http) with context path '/'
-2025-02-27 12:04:34 - Started PayrollApplication in 7.406 seconds (process running for 8.246)
-2025-02-27 12:05:07 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-27 12:05:07 - Initializing Servlet 'dispatcherServlet'
-2025-02-27 12:05:07 - Completed initialization in 2 ms
-2025-02-27 12:05:07 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2025-02-27 12:05:07 - begin
-2025-02-27 12:05:07 - select e1_0.id,e1_0.gender,e1_0.name,e1_0.salary,e1_0.start_date from employee e1_0 where e1_0.id=?
-2025-02-27 12:05:07 - committing
+2025-02-28 15:26:35 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-28 15:26:35 - create table employee_departments (employee_id integer not null, department varchar(255)) engine=InnoDB
+2025-02-28 15:26:36 - alter table employee_departments add constraint FKm4t1vl98xnlcup75ni4l9srbt foreign key (employee_id) references employee (id)
+2025-02-28 15:26:36 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-28 15:26:36 - Initializing JpaMetamodelMappingContext…
+2025-02-28 15:26:36 - Finished initializing JpaMetamodelMappingContext
+2025-02-28 15:26:37 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
+2025-02-28 15:26:37 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
+2025-02-28 15:26:38 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-28 15:26:39 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-28 15:26:40 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-28 15:26:40 - Started PayrollApplication in 22.592 seconds (process running for 25.081)
+2025-02-28 15:27:03 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-28 15:27:03 - Initializing Servlet 'dispatcherServlet'
+2025-02-28 15:27:03 - Completed initialization in 12 ms
+2025-02-28 15:27:03 - Saving new employee: Amit Kumar
+2025-02-28 15:27:03 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-02-28 15:27:03 - begin
+2025-02-28 15:27:04 - Executing identity-insert immediately
+2025-02-28 15:27:04 - insert into employee (gender,name,note,profile_picture,salary,start_date) values (?,?,?,?,?,?)
+2025-02-28 15:27:04 - committing
+2025-02-28 15:27:04 - Employee saved successfully with ID: 2
+2025-02-28 15:27:53 - Fetching all employees
+2025-02-28 15:27:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-02-28 15:27:53 - begin
+2025-02-28 15:27:54 - select e1_0.id,e1_0.gender,e1_0.name,e1_0.note,e1_0.profile_picture,e1_0.salary,e1_0.start_date from employee e1_0
+2025-02-28 15:27:54 - committing
+2025-02-28 15:27:54 - Number of employees found: 2
+2025-02-28 15:27:54 - select d1_0.employee_id,d1_0.department from employee_departments d1_0 where d1_0.employee_id=?
+2025-02-28 15:27:54 - select d1_0.employee_id,d1_0.department from employee_departments d1_0 where d1_0.employee_id=?
+2025-02-28 15:28:28 - Saving new employee: Nishant Kumar
+2025-02-28 15:28:28 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-02-28 15:28:28 - begin
+2025-02-28 15:28:28 - Executing identity-insert immediately
+2025-02-28 15:28:28 - insert into employee (gender,name,note,profile_picture,salary,start_date) values (?,?,?,?,?,?)
+2025-02-28 15:28:28 - committing
+2025-02-28 15:28:28 - Employee saved successfully with ID: 3

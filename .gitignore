@@ -7,7 +7,9 @@ target/
 mvnw
 mvnw.cmd
 .mvn
-
+payroll.log
+payroll.log  .2025-02-26.0.gz
+payroll.log  .2025-02-27.0.gz
 ### STS ###
 .apt_generated
 .classpath
