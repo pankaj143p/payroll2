@@ -1128,3 +1128,107 @@ List of constraint violations:[
 2025-02-28 15:28:28 - insert into employee (gender,name,note,profile_picture,salary,start_date) values (?,?,?,?,?,?)
 2025-02-28 15:28:28 - committing
 2025-02-28 15:28:28 - Employee saved successfully with ID: 3
+2025-02-28 16:11:59 - Starting PayrollApplication using Java 21.0.6 with PID 19368 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
+2025-02-28 16:11:59 - No active profile set, falling back to 1 default profile: "default"
+2025-02-28 16:12:07 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-28 16:12:07 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
+2025-02-28 16:12:07 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
+2025-02-28 16:12:08 - Finished Spring Data repository scanning in 407 ms. Found 1 JPA repository interface.
+2025-02-28 16:12:13 - Tomcat initialized with port 8080 (http)
+2025-02-28 16:12:13 - Starting service [Tomcat]
+2025-02-28 16:12:13 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-28 16:12:13 - Initializing Spring embedded WebApplicationContext
+2025-02-28 16:12:13 - Root WebApplicationContext: initialization completed in 13027 ms
+2025-02-28 16:12:16 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-28 16:12:16 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-28 16:12:17 - HHH000026: Second-level cache disabled
+2025-02-28 16:12:21 - Starting PayrollApplication using Java 21.0.6 with PID 19484 (/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes started by coderxyz in /home/coderxyz/CapgaminiLabWorks/PayRoll2)
+2025-02-28 16:12:21 - No active profile set, falling back to 1 default profile: "default"
+2025-02-28 16:12:25 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-28 16:12:26 - HikariPool-1 - Starting...
+2025-02-28 16:12:30 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@316d30ad
+2025-02-28 16:12:30 - HikariPool-1 - Start completed.
+2025-02-28 16:12:30 - Database ->
+	   name : MySQL
+	version : 8.0.41-0ubuntu0.24.04.1
+	  major : 8
+	  minor : 0
+2025-02-28 16:12:30 - Driver ->
+	   name : MySQL Connector/J
+	version : mysql-connector-j-8.0.33 (Revision: 7d6b0800528b6b25c68b52dc10d6c1c8429c100c)
+	  major : 8
+	  minor : 0
+2025-02-28 16:12:30 - JDBC version : 4.2
+2025-02-28 16:12:31 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-28 16:12:31 - JDBC driver metadata reported database stores quoted identifiers in more than one case
+2025-02-28 16:12:31 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2025-02-28 16:12:31 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-28 16:12:36 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-28 16:12:36 - Scanning for JPA repositories in packages com.bridgelabz.payroll.
+2025-02-28 16:12:36 - Identified candidate component class: file [/home/coderxyz/CapgaminiLabWorks/PayRoll2/target/classes/com/bridgelabz/payroll/repository/EmployeeRepository.class]
+2025-02-28 16:12:37 - Finished Spring Data repository scanning in 679 ms. Found 1 JPA repository interface.
+2025-02-28 16:12:41 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-28 16:12:42 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-28 16:12:42 - Tomcat initialized with port 8080 (http)
+2025-02-28 16:12:42 - Initializing JpaMetamodelMappingContext…
+2025-02-28 16:12:42 - Finished initializing JpaMetamodelMappingContext
+2025-02-28 16:12:43 - Root WebApplicationContext: initialization completed in 20314 ms
+2025-02-28 16:12:43 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
+2025-02-28 16:12:43 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
+2025-02-28 16:12:44 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-28 16:12:44 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-28 16:12:44 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-02-28 16:12:45 - HHH000026: Second-level cache disabled
+2025-02-28 16:12:46 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-28 16:12:47 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-28 16:12:47 - HikariPool-1 - Starting...
+2025-02-28 16:12:48 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d20616a
+2025-02-28 16:12:48 - HikariPool-1 - Start completed.
+2025-02-28 16:12:48 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-28 16:12:48 - Database ->
+	   name : MySQL
+	version : 8.0.41-0ubuntu0.24.04.1
+	  major : 8
+	  minor : 0
+2025-02-28 16:12:48 - Driver ->
+	   name : MySQL Connector/J
+	version : mysql-connector-j-8.0.33 (Revision: 7d6b0800528b6b25c68b52dc10d6c1c8429c100c)
+	  major : 8
+	  minor : 0
+2025-02-28 16:12:48 - JDBC version : 4.2
+2025-02-28 16:12:48 - Started PayrollApplication in 55.087 seconds (process running for 57.998)
+2025-02-28 16:12:48 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-28 16:12:48 - JDBC driver metadata reported database stores quoted identifiers in more than one case
+2025-02-28 16:12:48 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2025-02-28 16:12:49 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-28 16:12:53 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-28 16:12:53 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-28 16:12:53 - Initializing JpaMetamodelMappingContext…
+2025-02-28 16:12:53 - Finished initializing JpaMetamodelMappingContext
+2025-02-28 16:12:54 - Initializing repository instance for com.bridgelabz.payroll.repository.EmployeeRepository…
+2025-02-28 16:12:54 - Finished creation of repository instance for com.bridgelabz.payroll.repository.EmployeeRepository.
+2025-02-28 16:12:54 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-28 16:12:56 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-28 16:12:57 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-02-28 16:12:57 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-28 16:12:57 - HikariPool-1 - Shutdown initiated...
+2025-02-28 16:12:57 - HikariPool-1 - Shutdown completed.
+2025-02-28 16:18:03 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-28 16:18:03 - Initializing Servlet 'dispatcherServlet'
+2025-02-28 16:18:03 - Completed initialization in 8 ms
+2025-02-28 16:18:03 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDate` from String "2025-02-28": Failed to deserialize java.time.LocalDate: (java.time.format.DateTimeParseException) Text '2025-02-28' could not be parsed at index 2]
+2025-02-28 16:33:04 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDate` from String "28-02-2025": Failed to deserialize java.time.LocalDate: (java.time.format.DateTimeParseException) Text '28-02-2025' could not be parsed at index 2]
