@@ -10,7 +10,6 @@ mvnw.cmd
 payroll.log
 payroll.log  .2025-02-26.0.gz
 payroll.log  .2025-02-27.0.gz
-src/main/resources/application.properties
 ### STS ###
 .apt_generated
 .classpath
