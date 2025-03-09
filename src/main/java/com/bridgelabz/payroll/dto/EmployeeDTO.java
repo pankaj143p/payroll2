@@ -3,40 +3,39 @@ package com.bridgelabz.payroll.dto;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import java.time.LocalDate;
 import java.util.List;
 
-@AllArgsConstructor
+@Data
 @NoArgsConstructor
-@Getter @Setter
+@AllArgsConstructor
 public class EmployeeDTO {
 
-    @NotNull(message = "Name can not be null")
-    @Pattern(regexp = "^[A-Za-z ]+$", message = "Name must contain only letters and spaces")
+    private Long id;
+
+    @Pattern(regexp = "^[A-Z][a-zA-Z\\s]{2,}$", message = "Employee name Invalid")
     private String name;
 
-    @Min(value = 500, message = "Salary should be more than 500")
-    private double salary;
+    @DecimalMin(value = "0.0", message = "Salary must be greater than 0")
+    @DecimalMax(value = "9999999.0", message = "Salary is too high")
+    private Double salary;
 
-    @JsonFormat(pattern = "dd MM yyyy")
-    @NotNull(message = "start date needed")
-    @PastOrPresent(message = "Start date should be past or present")
-    private LocalDate startDate;
-
-    @Pattern(regexp = "male|female", message = "Gender needs male or female")
+    @NotBlank
     private String gender;
 
-    @NotBlank(message = "Note should not empty")
+//    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
+//    @JsonFormat(pattern = "yyyy-MM-dd")
+    private LocalDate StartDate;
+
+    @NotBlank(message = "Note is empty")
     private String note;
 
-    @NotBlank(message = "Profile picture should be not null")
+    @NotBlank(message = "Profile picture is empty")
     private String profilePicture;
 
-    @NotNull(message = "department should be needed")
-    private  List<String>department;
-
+    @NotEmpty(message = "Department(s) cannot be empty")
+    private String [] departments;
 }

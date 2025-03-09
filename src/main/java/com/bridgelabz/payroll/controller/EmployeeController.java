@@ -2,127 +2,66 @@ package com.bridgelabz.payroll.controller;
 
 import com.bridgelabz.payroll.dto.EmployeeDTO;
 import com.bridgelabz.payroll.entity.Employee;
-import com.bridgelabz.payroll.repository.EmployeeRepository;
 import com.bridgelabz.payroll.service.EmployeeService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
-// simple
-//@RestController
-//@RequestMapping("/employees")
-//public class EmployeeController {
-//
-//    @Autowired
-//    EmployeeService empSer;
-//
-//    @GetMapping("/all")
-//    // for show all emplees and details
-//    public List<Employee> getAllEmployees(){
-//        return empSer.getAllEmployees();
-//    }
-//
-//    @GetMapping({"/get/{id}"})
-//    public ResponseEntity<Employee> getEmployeeById(@PathVariable int id)
-//    {
-//        Employee emp = empSer.getEmployeeById(id);
-//        return (emp!=null) ? ResponseEntity.ok(emp) : ResponseEntity.notFound().build();
-//    }
-//
-//    // post mapping
-//    @PostMapping("/create")
-//    public ResponseEntity<Employee> addEmployee(@RequestBody EmployeeDTO empDto){
-//        Employee emp = empSer.saveEmployee(empDto);
-//        return ResponseEntity.status(201).body(emp);
-//    }
-//
-//    // for delete employee by id
-//    @DeleteMapping("/delete/{id}")
-//    public ResponseEntity<Void> deleteEmployee(@PathVariable int id) {
-//        boolean isDeleted = empSer.deleteEmployee(id);
-//        if (isDeleted) {
-//            return ResponseEntity.noContent().build();
-//        } else {
-//            return ResponseEntity.notFound().build();
-//        }
-//    }
-//
-//    // for update employee
-//    @PutMapping("/update/{id}")
-//    public ResponseEntity<Employee> updateEmployee(@PathVariable int id, @Valid @RequestBody EmployeeDTO empDto){
-//        Employee emp = empSer.updateEmployee(id, empDto);
-//        return (emp!=null) ? ResponseEntity.ok(emp) : ResponseEntity.notFound().build();
-//    }
-//
-//}
-
-
-
-
-
-//  <-------------  Using ArrayList  ------------------>
-
-
-
+import java.util.Map;
 
 @RestController
 @RequestMapping("/employees")
 public class EmployeeController {
 
     @Autowired
-    private EmployeeService employeeService;
+    private EmployeeService empSer;
 
-    // Create new Employee
-    @PostMapping("/create")
-    public ResponseEntity<Employee> createEmployee(@Valid @RequestBody EmployeeDTO employeeDTO) {
-        Employee employee = employeeService.saveEmployee(employeeDTO);
-        return ResponseEntity.status(201).body(employee);
-    }
-
-    // Get All Employees
+    // Get all employees
     @GetMapping("/all")
-    public ResponseEntity<List<Employee>> getAllEmployees() {
-        List<Employee> employees = employeeService.getAllEmployees();
-        if (!employees.isEmpty()) {
-            return ResponseEntity.ok(employees);
-        } else {
-            return ResponseEntity.noContent().build();
-        }
+    public List<Employee> getAllEmployees() {
+        return empSer.getAllEmployees();
     }
 
-    // Get Employee by ID
+    // Get employee by ID
     @GetMapping("/get/{id}")
     public ResponseEntity<Employee> getEmployeeById(@PathVariable int id) {
-        Employee employee = employeeService.getEmployeeById(id);
-        if (employee != null) {
-            return ResponseEntity.ok(employee);
-        } else {
-            return ResponseEntity.notFound().build();
-        }
+        Employee emp = empSer.getEmployeeById(id);
+        return emp != null ? ResponseEntity.ok(emp) : ResponseEntity.notFound().build();
     }
 
-    // Update Employee
-    @PutMapping("/update/{id}")
-    public ResponseEntity<Employee> updateEmployee(@PathVariable int id, @Valid @RequestBody EmployeeDTO employeeDTO) {
-        Employee employee = employeeService.updateEmployee(id, employeeDTO);
-        if (employee != null) {
-            return ResponseEntity.ok(employee);
-        } else {
-            return ResponseEntity.notFound().build();
+    // Create a new employee
+//    @PostMapping
+//    public ResponseEntity<Employee> addEmployee(@RequestBody @Valid EmployeeDTO employeeDTO) {
+//        Employee employee = empSer.saveEmployee(employeeDTO);
+//        return new ResponseEntity<>(employee, HttpStatus.CREATED);
+//    }
+    @PostMapping
+    public ResponseEntity<EmployeeDTO> createEmployee(@Valid @RequestBody EmployeeDTO employee) {
+        EmployeeDTO employeeDTO = empSer.saveEmployee(employee);
+        if(employeeDTO.getName()!=null) {
+            return ResponseEntity.ok(employeeDTO);
+        }else {
+            return ResponseEntity.internalServerError().build();
         }
     }
-
-    // Delete Employee by ID
+    // Delete employee by ID
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<Void> deleteEmployee(@PathVariable int id) {
-        boolean isDeleted = employeeService.deleteEmployee(id);
-        if (isDeleted) {
-            return ResponseEntity.noContent().build();
-        } else {
-            return ResponseEntity.notFound().build();
-        }
+        boolean isDeleted = empSer.deleteEmployee(id);
+        return isDeleted ? ResponseEntity.noContent().build() : ResponseEntity.notFound().build();
+    }
+
+    // Update employee by ID
+    @PutMapping("/update/{id}")
+    public ResponseEntity<Object> updateEmployee(@PathVariable int id, @Valid @RequestBody EmployeeDTO updatedEmployee) {
+        EmployeeDTO employeeDTO = empSer.updateEmployee(id,updatedEmployee);
+        if(employeeDTO.getName()!=null) return ResponseEntity.ok(empSer.updateEmployee(id,updatedEmployee));
+        Map<String, String> errors = new HashMap<>();
+        errors.put("error","ID not FOUND");
+        return new ResponseEntity<>(errors, HttpStatus.NOT_FOUND);
     }
 }
